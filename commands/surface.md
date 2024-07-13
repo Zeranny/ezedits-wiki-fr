@@ -1,7 +1,7 @@
 # Surface
 
-All sub-commands are under `//ezsurface`  (`//ezsu`) \
-e.g `//ezsurface rockify`
+Toutes les sous-commandes sont sous `//ezsurface`  (`//ezsu`) \
+par exemple`//ezsurface rockify`
 
 ## `//ezsurface ...`
 
@@ -13,16 +13,16 @@ e.g `//ezsurface rockify`
 
 **`//ezsu fuzzify <radius> [smooth_radius] [smooth_iterations] [-c] [-e] [-m] [-t]`**
 
-Uses white noise to make the surface appear more fuzzy.
+Utilise du noise blanc pour rendre la surface plus floue.
 
-* **Radius**: A float value determining the maximum distance from the surface that modifications can occur.
-* **Smooth Radius** (Default: 0): Specifies the radius for smoothing operations.
-* **Smooth Iterations** (Default: 0): Determines how many times the smoothing operation is applied.
-* **-c**: Restricts modifications to only carve into the terrain.
-* **-e**: Limits the operation to only expand out from the terrain.
-* **-m**: Applies a mask to only modify surfaces that match the specified criteria. \
-  This option can significantly slow down the process due to the added complexity of matching surfaces.
-* **-t**: Tries to retain the topology of the region.
+* **Radius**: Valeur flottante déterminant la distance maximale de la surface à laquelle des modifications peuvent se produire.
+* **Smooth Radius** (par défaut: 0): spécifie le rayon pour les opérations de lissage.
+* **Smooth Iterations** (par défaut: 0): détermine le nombre de fois que l'opération de lissage est appliquée.
+* **-c**: limite les modifications à la sculpture sur le terrain uniquement.
+* **-e**: limite l'opération à l'extension uniquement à partir du terrain.
+* **-m**:  applique un masque pour modifier uniquement les surfaces qui correspondent aux critères spécifiés. \
+  Cette option peut ralentir considérablement le processus en raison de la complexité supplémentaire de la correspondance des surfaces.
+* **-t**: Tente de conserver la topologie de la région..
 
 </details>
 
@@ -34,18 +34,18 @@ Uses white noise to make the surface appear more fuzzy.
 
 **`//ezsu rockify <radius> [size] [oct] [smooth_radius] [smooth_iterations] [-c] [-e] [-m] [-t]`**
 
-Uses Perlin noise to make a surface rocky.
+Utilise le noise Perlin pour rendre une surface rocheuse.
 
-* **Radius**: A float value determining the maximum distance from the surface that modifications can occur.
-* **Noise Size** (Default: 10): Controls the scale of the noise used.
-* **Noise Octaves** (Default: 1): Sets the number of layers of noise applied.
-* **Smooth Radius** (Default: 1): Specifies the radius for smoothing operations.
-* **Smooth Iterations** (Default: 4): Determines how many times the smoothing operation is applied.
-* **-c**: Restricts modifications to only carve into the terrain.
-* **-e**: Limits the operation to only expand out from the terrain.
-* **-m**: Applies a mask to only modify surfaces that match the specified criteria. \
-  This option can significantly slow down the process due to the added complexity of matching surfaces.
-* **-t**: Tries to retain the topology of the region.
+* **Radius**: Valeur flottante déterminant la distance maximale de la surface à laquelle des modifications peuvent se produire.
+* **Noise Size** (par défaut: 10): contrôle l’échelle du noise utilisé.
+* **Noise Octaves** (par défaut: 1): définit le nombre de couches de noise appliquées.
+* **Smooth Radius** (par défaut: 1): spécifie le rayon pour les opérations de lissage.
+* **Smooth Iterations** (par défaut: 4): détermine le nombre de fois que l'opération de lissage est appliquée.
+* **-c**:  limite les modifications à la sculpture sur le terrain uniquement.
+* **-e**:  limite l'opération à l'extension uniquement à partir du terrain.
+* **-m**: applique un masque pour modifier uniquement les surfaces qui correspondent aux critères spécifiés. \
+  Cette option peut ralentir considérablement le processus en raison de la complexité supplémentaire de la correspondance des surfaces.
+* **-t**: Tente de conserver la topologie de la région.
 
 </details>
 
@@ -57,17 +57,17 @@ Uses Perlin noise to make a surface rocky.
 
 **`//ezsu voronoify <radius> [cell_size] [smooth_radius] [smooth_iterations] [-c] [-e] [-m] [-t]`**
 
-Uses Voronoi noise to deform a surface.
+Utilise le noise de Voronoi pour déformer une surface.
 
-* **Radius**: A float value determining the maximum distance from the surface that modifications can occur.
-* **Cell Size** (Default: 12): Determines the average size of each cell in the Voronoi pattern, affecting the scale of the texture.
-* **Smooth Radius** (Default: 0): Specifies the radius for smoothing operations.
-* **Smooth Iterations** (Default: 0): Determines how many times the smoothing operation is applied.
-* **-c**: Restricts modifications to only carve into the terrain.
-* **-e**: Limits the operation to only expand out from the terrain.
-* **-m**: Applies a mask to only modify surfaces that match the specified criteria. \
-  This option can significantly slow down the process due to the added complexity of matching surfaces.
-* **-t**: Tries to retain the topology of the region.
+* **Radius**: Valeur flottante déterminant la distance maximale de la surface à laquelle des modifications peuvent se produire.
+* **Cell Size** (par défaut: 12): spécifie le rayon pour les opérations de lissage.
+* **Smooth Radius** (par défaut: 0): Specifies the radius for smoothing operations.
+* **Smooth Iterations** (par défaut: 0): détermine le nombre de fois que l'opération de lissage est appliquée.
+* **-c**: limite les modifications à la sculpture sur le terrain uniquement.
+* **-e**: limite l'opération à l'extension uniquement à partir du terrain.
+* **-m**: applique un masque pour modifier uniquement les surfaces qui correspondent aux critères spécifiés. \
+ Cette option peut ralentir considérablement le processus en raison de la complexité supplémentaire de la correspondance des surfaces.
+* **-t**: Tente de conserver la topologie de la région.
 
 </details>
 
@@ -79,17 +79,17 @@ Uses Voronoi noise to deform a surface.
 
 **`//ezsu noisify <radius> <noise> [scale] [smooth_radius] [smooth_iterations] [-c] [-e] [-m] [-t]`**
 
-Uses a noise preset to deform a surface.
+Utilise un préréglage de noise pour déformer une surface.
 
-* **Radius**: A float value determining the maximum distance from the surface that modifications can occur.
-* **Noise**: Specifies the noise to use for the modification.
-* **Scale** (Default: 1): Adjusts the scale of the noise.
-* **Smooth Radius** (Default: 1): Specifies the radius for smoothing operations.
-* **Smooth Iterations** (Default: 4): Determines how many times the smoothing operation is applied.
-* **-c**: Restricts modifications to only carve into the terrain.
-* **-e**: Limits the operation to only expand out from the terrain.
-* **-m**: Applies a mask to only modify surfaces that match the specified criteria. \
-  This option can significantly slow down the process due to the added complexity of matching surfaces.
-* **-t**: Tries to retain the topology of the region.
+* **Radius**: Valeur flottante déterminant la distance maximale de la surface à laquelle des modifications peuvent se produire.
+* **Noise**:  Spécifie le noise à utiliser pour la modification.
+* **Scale** (par défaut: 1):  ajuste l’échelle du noise.
+* **Smooth Radius** (par défaut: 1): spécifie le rayon pour les opérations de lissage.
+* **Smooth Iterations** (par défaut: 4): détermine le nombre de fois que l'opération de lissage est appliquée.
+* **-c**:  limite les modifications à la sculpture sur le terrain uniquement.
+* **-e**: limite l'opération à l'extension uniquement à partir du terrain.
+* **-m**:applique un masque pour modifier uniquement les surfaces qui correspondent aux critères spécifiés. \
+  Cette option peut ralentir considérablement le processus en raison de la complexité supplémentaire de la correspondance des surfaces.
+* **-t**:  Tente de conserver la topologie de la région.
 
 </details>

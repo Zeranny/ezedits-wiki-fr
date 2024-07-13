@@ -1,4 +1,4 @@
-# Masks
+# Masques
 
 ### `#near`
 
@@ -9,9 +9,7 @@
 **`#near[mask][distance]`**\
 **`#near[mask][minDistance][maxDistance]`**\
 \
-Masks to all blocks within a given spherical (euclidean) distance of a mask.\
-Doesn't modify blocks which match the inner `mask`.\
-Can also be set to exclude blocks closer than the minimum distance.\
+Masque tous les blocs dans une distance sphérique (euclidienne) donnée d'un masque. Ne modifie pas les blocs qui correspondent à la distance intérieure `mask`.\ également être défini pour exclure les blocs plus proches que la distance minimale.\
 
 
 ![](../.gitbook/assets/mask\_near\_mask.gif) **`[mask]`**
@@ -28,7 +26,7 @@ Can also be set to exclude blocks closer than the minimum distance.\
 
 <summary>#aim Mask</summary>
 
-Takes the block the player is aiming at as the mask.
+Prend le bloc que le joueur vise comme masque.
 
 <img src="../.gitbook/assets/aimMask.gif" alt="" data-size="original">
 
@@ -42,8 +40,7 @@ Takes the block the player is aiming at as the mask.
 
 **`#blocklight[lightLevel]` or `#blocklight[minLevel][maxLevel]`**
 
-Masks to blocks of a given block light (Illimunation provided by light sources other than skylight).
-Optionally takes a minimum and maximum light level, matching any level within that range.
+Masque les blocs d'un bloc lumineux donné (éclairage fourni par des sources lumineuses autres que la lumière du ciel). Prend éventuellement un niveau de lumière minimum et maximum, correspondant à n'importe quel niveau dans cette plage.
 
 </details>
 
@@ -55,8 +52,7 @@ Optionally takes a minimum and maximum light level, matching any level within th
 
 **`#truelight[lightLevel]` or `#truelight[minLevel][maxLevel]`**
 
-Masks to blocks of a given total light level (Illimunation provided by any light sources including skylight).
-Optionally takes a minimum and maximum light level, matching any level within that range.
+Masque les blocs d'un niveau de lumière total donné (éclairage fourni par toutes les sources de lumière, y compris la lumière du ciel). Prend éventuellement un niveau de lumière minimum et maximum, correspondant à n'importe quel niveau dans cette plage.
 
 </details>
 
@@ -69,7 +65,7 @@ Optionally takes a minimum and maximum light level, matching any level within th
 **`#eznoisemask[noisePreset][<scale>][<threshold>][<seed>]`**\
 **Alias: `#eznm`**
 
-Uses a noise preset values `0.0-1.0` to match blocks above a given noise threshold.
+Utilise des valeurs de bruit prédéfinies `0.0-1.0` pour faire correspondre les blocs au-dessus d'un seuil de bruit donné.
 
 </details>
 
@@ -81,10 +77,9 @@ Uses a noise preset values `0.0-1.0` to match blocks above a given noise thresho
 
 **`#vectorgradientmask[vector][distance][<noisePreset>][<noiseScale>][noiseSeed]`**
 
-Shorthand: `#vgradientm`
+Sténographie: `#vgradientm`
 
-Masks blocks along a vector with a given distance length. With closer blocks more likely to pass the mask check. \
-Compatible with noise presets.
+Masque les blocs le long d'un vecteur avec une longueur de distance donnée. Avec des blocs plus proches, il est plus probable de passer le test de masque. Compatible avec les préréglages de bruit.
 
 </details>
 
@@ -96,13 +91,13 @@ Compatible with noise presets.
 
 **`#attached[<vector,vector,vector ...>]`**
 
-Masks to blocks which are attached to at least 1 adjacent non-air block.
+Masques pour blocs qui sont attachés à au moins 1 bloc non aérien adjacent.
 
-Optionally takes a list of direction vectors to check instead of every side.\
-e.g `#attached[up,down,left,north]`
+Prend éventuellement une liste de vecteurs de direction à vérifier au lieu de chaque côté. \
+par exemple`#attached[up,down,left,north]`
 
 \
-In either case, attached means that the block is "touching" the adjacent block. So a bottom slab would not pass `#attached[up]` whereas a lantern with the state `[hanging=true]` would.
+Dans les deux cas, attaché signifie que le bloc « touche » le bloc adjacent. Ainsi, une dalle inférieure ne passerait pas `#attached[up]` alors qu'une lanterne avec l'état  `[hanging=true]` le ferait.
 
 </details>
 
@@ -112,9 +107,9 @@ In either case, attached means that the block is "touching" the adjacent block. 
 
 <summary>#fullblock mask</summary>
 
-Masks to blocks which fill an entire cube space.
+Masques pour blocs qui remplissent tout l'espace d'un cube.
 
-e.g 1-7 layers of snow will not pass, but 8 layers of snow, a block like stone, or a transparent block like glass will pass.
+Par exemple, 1 à 7 couches de neige ne passeront pas, mais 8 couches de neige, un bloc comme de la pierre ou un bloc transparent comme du verre passeront.
 
 </details>
 
@@ -126,10 +121,10 @@ e.g 1-7 layers of snow will not pass, but 8 layers of snow, a block like stone, 
 
 **`#palette[palette][<strict>]`**
 
-Masks to blocks which match any block in the palette.
+Masques de blocs qui correspondent à n'importe quel bloc de la palette.
 
-Optional `<strict>` value of True or False to determine if block data must also match.\
-e.g `oak_stairs[facing=east]` will only match with `oak_stairs[facing=west]` if strict is set to **False**.
+Valeur facultative `<strict>` de True ou False pour déterminer si les données du bloc doivent également correspondre.\
+par exemple, `oak_stairs[facing=east]` ne correspondra que  `oak_stairs[facing=west]` si strict est défini sur **False**.
 
 </details>
 
@@ -141,9 +136,8 @@ e.g `oak_stairs[facing=east]` will only match with `oak_stairs[facing=west]` if 
 
 **`#fuzzypalette[palette]`**
 
-Shorthand: **`#fpalette`**
+Sténographie: **`#fpalette`**
 
-Masks to blocks which match any block in the palette, regardless of block data.\
-Equivalent to **`#palette[palette][False]`**
+Masques de blocs qui correspondent à n'importe quel bloc de la palette, quelles que soient les données du bloc. Équivalent à **`#palette[palette][False]`**
 
 </details>

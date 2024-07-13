@@ -1,35 +1,35 @@
-# Palettes Explained
+# Les palettes expliquées
 
-Palettes in ezEdits represent a list of blocks that can be used in several commands where the order of blocks will be maintained.\
+Les palettes dans ezEdits représentent une liste de blocs qui peuvent être utilisés dans plusieurs commandes où l'ordre des blocs sera conservé.\
 
-Palettes can be saved and accessed using the **`#`** prefix for user-saved palettes, and **`##`** for inbuilt preset palettes.\
-e.g `##LegacyWool` represents the inbuilt wool palette starting from white wool, orange wool up to red wool and finally black wool.&#x20;
+Les palettes peuvent être enregistrées et accessibles à l'aide du **`#`** préfixe des palettes enregistrées par l'utilisateur et **`##`** des palettes prédéfinies intégrées. \
+par exemple, `##LegacyWool` représente la palette de laine intégrée commençant par la laine blanche, la laine orange jusqu'à la laine rouge et enfin la laine noire.&#x20;
 
-Some of the many features that use palettes include:
+Certaines des nombreuses fonctionnalités qui utilisent des palettes incluent :
 
-* `//eztexture ...` - *Texturing Commands*
-* `#palette` - *Masks*
+* `//eztexture ...` - *Commandes de texturation*
+* `#palette` - *Masques*
 * `//ezbrush gradient ...` - *Brushes*
 
 
 
 Palettes can be constructed as a simple list of blocks, or via several modifiers:
 
-* &#x20;**`,`** - Concatenate: Adds one block or palette on to the end of the preceding block or palette.\
-  e.g `stone,dirt` is a 2 block palette of stone and dirt. `stone,##LegacyWool` is a palette made of stone and the blocks of the ##LegacyWool preset palette.
-* &#x20;**`-`** - Invert: Reverses the order of a palette.\
-  e.g `-##LegacyWool` is the wool preset palette in reverse order (starts with black instead of white)
-* &#x20;**`(start:end)`** - Sub-palette: Returns a portion of a palette.\
-  e.g `##LegacyWool(1:8)` will return the first 8 blocks of the ##LegacyWool preset palette.
-* &#x20;**`*`** - Repeater: Repeats the previous segment a given number of times.\
-  e.g `gold_block*10,diamond_block` will return a palette of 10 gold blocks, followed by a single diamond block.
-* &#x20;**`[]`** - Grouping: Groups palettes together to allow a modifer to treat them as a single palette.\
-  e.g `-##LegacyWool,gold_block` will return the ##LegacyWool preset palette in reverse order, with a gold block at the end. Where `-[##LegacyWool,gold_block]` will return the gold block at the start.
-* &#x20;**`=`** - Result: Allows a palette to be tab-completed into its list of blocks if needed.
+* &#x20;**`,`** - Concaténer : ajoute un bloc ou une palette à la fin du bloc ou de la palette précédente.\
+  par exemple, `stone,dirt` il s'agit d'une palette de 2 blocs de pierre et de terre. `stone,##LegacyWool` est une palette composée de pierre et des blocs de la palette prédéfinie ##LegacyWool.
+* &#x20;**`-`** - Inverser : inverse l'ordre d'une palette.\
+  Par exemple, `-##LegacyWool`la palette prédéfinie de laine est-elle dans l'ordre inverse (commence par le noir au lieu du blanc)
+* &#x20;**`(start:end)`** - Sous-palette : renvoie une partie d'une palette. \
+  Par exemple, `##LegacyWool(1:8)` renverra les 8 premiers blocs de la palette prédéfinie ##LegacyWool.
+* &#x20;**`*`** - Répéteur : répète le segment précédent un nombre donné de fois.\
+  Par exemple, `gold_block*10,diamond_block` renverra une palette de 10 blocs d'or, suivis d'un seul bloc de diamant.
+* &#x20;**`[]`** - Regroupement : regroupe les palettes pour permettre à un modificateur de les traiter comme une seule palette.\
+  Par exemple, `-##LegacyWool,gold_block` renverra la palette prédéfinie ##LegacyWool dans l'ordre inverse, avec un bloc doré à la fin. le `-[##LegacyWool,gold_block]` renverra le bloc doré au début.
+* &#x20;**`=`** - Résultat : Permet de compléter une palette par tabulation dans sa liste de blocs si nécessaire.
 
 
 
-**##LegacyWool preset palette:**
+**##Palette prédéfinie LegacyWool**
 
 <figure><img src="../.gitbook/assets/2024-02-04_19.31.54.png" alt=""><figcaption></figcaption></figure>
 

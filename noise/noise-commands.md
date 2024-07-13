@@ -1,28 +1,28 @@
-# Noise Commands
+# Commandes de bruit
 
-All sub-commands are under `//eznoise`  (`//ezn`) \
-e.g `//eznoise list`
+Toutes les sous-commandes sont sous `//eznoise`  (`//ezn`) \
+par exemple `//eznoise list`
 
 ## `//eznoise ...`
 
 ### `list [SET]`
 
 * `ALL`\
-  Lists all available noise presets
+ Répertorie tous les préréglages de bruit disponibles
 * `DEFAULT`\
-  Lists all default plugin noise presets
+ Répertorie tous les préréglages de bruit de plug-in par défaut
 * `MINE`\
-  Lists all user-defined noise presets
+ Répertorie tous les préréglages de bruit définis par l'utilisateur
 
 ### `save <presetName> <noise> [-f]`
 
-Saves a user-defined noise preset with a given name.\
-`-f` to override an existing noise preset.
+Enregistre un préréglage de bruit défini par l'utilisateur avec un nom donné.\
+`-f` pour remplacer un préréglage de bruit existant.
 
 ### `delete <presetName>`
 
-Deletes a user-defined noise preset matching the given name.
+Supprime un préréglage de bruit défini par l'utilisateur correspondant au nom donné.
 
 ### `print <noise>`
 
-Prints the settings of a given noise preset in chat.
+Imprime les paramètres d'un préréglage de bruit donné dans le chat.

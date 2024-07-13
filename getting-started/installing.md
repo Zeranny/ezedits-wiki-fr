@@ -1,13 +1,13 @@
-# Installing
+# Installation
 
-ezEdits is installed like any other plugin, but requires either WorldEdit or FastAsyncWorldEdit to already be installed (only one, not both).
+ezEdits est installé comme n'importe quel autre plugin, mais nécessite que WorldEdit ou FastAsyncWorldEdit soient déjà installés (un seul, pas les deux).
 
 * [WorldEdit](https://modrinth.com/plugin/worldedit)
 * [FastAsyncWorldEdit](https://www.spigotmc.org/resources/fastasyncworldedit.13932/)
 
-Currently we support Minecraft 1.20+ but it may work on older versions.\
-If you use 1.20.5+ make sure to update your Java to at least 21.
+Actuellement, nous prenons en charge Minecraft 1.20+ mais il peut fonctionner sur les anciennes versions.\
+Si vous utilisez 1.20.5+, assurez-vous de mettre à jour votre Java à au moins 21.
 
-**You can obtain the .jar file by supporting us on Patreon/Ko-Fi.**
+**Vous pouvez obtenir le fichier.jar en nous soutenant sur Patreon/Ko-Fi.**
 
-Simply drop the .jar file into your plugins folder and run your server as normal. An "ezEdits" folder containing a config.yml file will be created which you can edit.&#x20;
+Déposez simplement le fichier.jar dans votre dossier plugins et exécutez votre serveur normalement. Un dossier « ezEdits » contenant un fichier config.yml sera créé que vous pourrez modifier. &#x20;

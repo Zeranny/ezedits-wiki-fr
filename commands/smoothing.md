@@ -10,11 +10,11 @@
 
 **`Alias: //ezsm`**
 
-The `//ezsmooth` command smooths the edges and surfaces of a selected region using a 3 dimensional smoothing algorithm.
+La `//ezsmooth` commande lisse les bords et les surfaces d'une région sélectionnée à l'aide d'un algorithme de lissage tridimensionnel.
 
-* **Radii**: The smoothing radius or radii, which can be a single value or three comma-separated values for the East/West, Up/Down, and North/South directions, respectively. This parameter controls the extent of the smoothing effect.
-* **Iterations**: The number of times the smoothing operation is executed. More iterations lead to a smoother outcome but increase processing time.
-* **Bias**: A value between -1.0 and 1.0 that adjusts the smoothing effect's expansion or contraction. Positive values expand the smoothed area, while negative values contract it.
+* **Radii**: le ou les rayons de lissage, qui peuvent être une valeur unique ou trois valeurs séparées par des virgules pour les directions Est/Ouest, Haut/Bas et Nord/Sud, respectivement. Ce paramètre contrôle l'étendue de l'effet de lissage.
+* **Iterations**: nombre de fois que l'opération de lissage est exécutée. Un nombre plus élevé d'itérations conduit à un résultat plus fluide mais augmente le temps de traitement.
+* **Bias**:  valeur comprise entre -1,0 et 1,0 qui ajuste l'expansion ou la contraction de l'effet de lissage. Les valeurs positives élargissent la zone lissée, tandis que les valeurs négatives la contractent.
 
 </details>
 
@@ -28,9 +28,9 @@ The `//ezsmooth` command smooths the edges and surfaces of a selected region usi
 
 **`Alias: //inflate`**
 
-The `//ezinflate` command expands the volume of blocks within a selected region by a specified amount, effectively "inflating" the build.
+La `//ezinflate` commande augmente le volume des blocs dans une région sélectionnée d'une quantité spécifiée, « gonflant » ainsi efficacement la construction.
 
-* **Radius**: Specifies the expansion distance in blocks. This value determines how far from the original surfaces the new, inflated surfaces will be created.
+* **Radius**: Spécifie la distance d'expansion en blocs. Cette valeur détermine à quelle distance des surfaces d'origine les nouvelles surfaces gonflées seront créées.
 
 </details>
 
@@ -44,9 +44,9 @@ The `//ezinflate` command expands the volume of blocks within a selected region 
 
 **`Alias: //deflate`**
 
-The `//ezdeflate` command contracts the volume of blocks within a selected region by a specified amount, effectively "deflating" the build.
+La `//ezdeflate` commande contracte le volume des blocs dans une région sélectionnée d'une quantité spécifiée, « dégonflant » ainsi efficacement la construction.
 
-* **Radius**: Specifies the expansion distance in blocks. This value determines how far inwards from the original surfaces that blocks will be removed.
+* **Radius**: spécifie la distance d'expansion en blocs. Cette valeur détermine la distance à laquelle les blocs seront supprimés à partir des surfaces d'origine.
 
 </details>
 
@@ -60,14 +60,14 @@ The `//ezdeflate` command contracts the volume of blocks within a selected regio
 
 **`Alias: //smoothblocks`**
 
-The `//ezsmoothblocks` command modifies a selected region by placing slabs, stairs, and walls to create a significantly smoother surface.
+La `//ezsmoothblocks` commande modifie une région sélectionnée en plaçant des dalles, des escaliers et des murs pour créer une surface nettement plus lisse.
 
-* **Radius**: Specifies the smoothing radius in blocks. This value determines the area around each block that is considered during the smoothing process.
-* **Iterations**: The number of times the smoothing operation is executed. More iterations result in a smoother outcome but increase processing time.
-* **Bias**: A value between -1.0 and 1.0 that adjusts the smoothing effect's expansion or contraction. Positive values tend to expand the smoothed area, while negative values contract it, offering control over the final appearance.
-* **-s**: Limits the smoothing process to only use slabs.
-* **-t**: Excludes walls from smoothing.
-* **-w**: Uses an alternative set of blocks.
+* **Radius**: spécifie le rayon de lissage en blocs. Cette valeur détermine la zone autour de chaque bloc qui est prise en compte pendant le processus de lissage.
+* **Iterations**:nombre de fois que l'opération de lissage est exécutée. Un nombre plus élevé d'itérations produit un résultat plus lisse, mais augmente le temps de traitement.
+* **Bias**: valeur comprise entre -1,0 et 1,0 qui ajuste l'expansion ou la contraction de l'effet de lissage. Les valeurs positives tendent à élargir la zone lissée, tandis que les valeurs négatives la contractent, offrant ainsi un contrôle sur l'apparence finale.
+* **-s**: limite le processus de lissage pour n'utiliser que des dalles.
+* **-t**: exclut les murs du lissage.
+* **-w**: utilise un ensemble alternatif de blocs.
 
 </details>
 

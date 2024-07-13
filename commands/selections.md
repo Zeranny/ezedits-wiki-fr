@@ -1,6 +1,6 @@
 # Selections
 
-## Selection Commands
+## Commandes de sélection
 
 ### `//selload`
 
@@ -11,9 +11,9 @@
 **`//selload [selection]`**\
 _Alternate for \`//ezsel load\`_
 
-The `//selload` command retrieves a previously saved selection from the player's saved selection list.
+La `//selload` commande récupère une sélection précédemment enregistrée dans la liste de sélection enregistrée du joueur.
 
-* Selection: A previously saved selection.
+* Sélection : une sélection précédemment enregistrée.
 
 </details>
 
@@ -25,10 +25,10 @@ The `//selload` command retrieves a previously saved selection from the player's
 
 **`//next <direction> <gap>`**
 
-The `//next` command shifts your current selection area by its own size in a specified direction.
+La `//next` commande décale votre zone de sélection actuelle de sa propre taille dans une direction spécifiée.
 
-* **Direction** (Default: Player AIM): Specifies the direction to shift the selection towards. If not provided, it defaults to the direction the player is aiming.
-* **Gap** (Default: 0): An optional parameter to add an additional gap between the current selection position, and the shifted position.
+* **Direction** (par défaut: visé du joueurs): spécifie la direction vers laquelle déplacer la sélection. Si elle n'est pas fournie, la valeur par défaut est la direction vers laquelle le joueur vise.
+* **Espace** (par défaut: 0): un paramètre facultatif permettant d'ajouter un espace supplémentaire entre la position de sélection actuelle et la position décalée.
 
 </details>
 
@@ -42,12 +42,12 @@ The `//next` command shifts your current selection area by its own size in a spe
 
 **`Alias: //seltome`**
 
-The `//selhere` command moves your current selection to your location.
+La `//selhere` commande déplace votre sélection actuelle vers votre emplacement.
 
-* **SelectionPosition** (Default: POS1): Specifies which point in the selection to move to the player's position. All other points will be moved to the relative positon.
-  * POS1 - The "Pos1" of the selection, or first point for convex/poly selections.
-  * POS2 - The "Pos2" of the selection, or the last points for convex/poly selections.
-  * CENTER - The center point of the selection
+* **SelectionPosition** (par défaut: POS1):  spécifie le point de la sélection à déplacer vers la position du joueur. Tous les autres points seront déplacés vers la position relative.
+  * POS1 -  Le « Pos1 » de la sélection, ou premier point pour les sélections convexes/polygonales.
+  * POS2 -  Le « Pos2 » de la sélection, ou les derniers points pour les sélections convexes/polygonales.
+  * CENTER - Le point central de la sélection
 
 </details>
 
@@ -61,8 +61,8 @@ The `//selhere` command moves your current selection to your location.
 
 **`Alias: //selinvert`**
 
-The `//ezselinvert` command reverses the order of points in your current selection.\
-This will be most noticeable with convex selections as with a cuboid selection pos1 and pos2 will simply swap places, whereas a convex selection will reverse the order of every point.
+La `//ezselinvert` commande inverse l'ordre des points dans votre sélection actuelle. \
+Cela sera particulièrement visible avec les sélections convexes, car avec une sélection cuboïde, pos1 et pos2 échangeront simplement leurs places, alors qu'une sélection convexe inversera l'ordre de chaque point.
 
 </details>
 
@@ -76,7 +76,7 @@ This will be most noticeable with convex selections as with a cuboid selection p
 
 **`Alias: //-2`**
 
-The `//delpos2` command removes the last secondary selection point for convex and poly selections.
+La `//delpos2` commande supprime le dernier point de sélection secondaire pour les sélections convexes et poly.
 
 </details>
 
@@ -84,23 +84,23 @@ The `//delpos2` command removes the last secondary selection point for convex an
 
 ## Selection Management Commands
 
-All sub-commands are under `//ezselection`  (`//ezsel`) \
-e.g `//ezsel list`
+Toutes les sous-commandes sont sous `//ezselection`  (`//ezsel`) \
+par exemple `//ezsel list`
 
 ### `list [-g]`
 
-Lists all the user's saved selections. Click a selection name to load.\
-`-g` to group selections by type.
+Répertorie toutes les sélections enregistrées par l'utilisateur. Cliquez sur le nom d'une sélection pour la charger.\
+`-g` pour regrouper les sélections par type.
 
 ### `load <selection>`
 
-Retrieves a previously saved selection from the player's saved selection list.
+Récupère une sélection précédemment enregistrée dans la liste de sélection enregistrée du joueur.
 
 ### `save <selectionName> [-f]`
 
-Saves the user's current selection with a given name.\
-`-f` to override an existing saved selection.
+Enregistre la sélection actuelle de l'utilisateur avec un nom donné.\
+`-f` pour remplacer une sélection enregistrée existante.
 
 ### `delete <selectionName>`
 
-Deletes a user's selection with the given name.
+Supprime la sélection d'un utilisateur avec le nom donné.

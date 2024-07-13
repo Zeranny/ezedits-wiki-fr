@@ -15,15 +15,15 @@ e.g `//ng heightmap`
 
 **`//eznoisegen heightmap <palette> <noise> [height] [-z <zoom>] [-s <seed>] [-o <offset>] [-ct]`**
 
-* **Palette**: Specifies the palette of blocks to use.&#x20;
-* **Noise**: Defines the noise preset to use.&#x20;
-* **Height** (Default: 0): Controls the height from the bottom of your selection. A value of 0 will take the selection's height.
-  _Can place blocks above the selection if the height is great enough_&#x20;&#x20;
-* **-z** (Default: 1): Adjusts the zoom level of the noise.&#x20;
-* **-s** (Default: -1): Sets the noise seed.&#x20;
-* **-o** (Default: (0,0,0)): Offsets the noise generation coordinates by a given vector (X,Y,Z).&#x20;
-* **-c**: When used, centres the noise generation on the world coordinates of the selection.&#x20;
-* **-t**: Enables smooth mode, specifically for snow, water, and lava blocks in the palette \[Applicable only in heightmap mode].
+* **Palette**:  Spécifie la palette de blocs à utiliser.&#x20;
+* **Noise**: définit le préréglage de noise à utiliser.&#x20;
+* **Height** (par défaut: 0): contrôle la hauteur à partir du bas de votre sélection. Une valeur de 0 correspond à la hauteur de la sélection.
+  _Vous pouvez placer des blocs au-dessus de la sélection si la hauteur est suffisamment grande._&#x20;&#x20;
+* **-z** (par défaut: 1): ajuste le niveau de zoom du noise.&#x20;
+* **-s** (par défaut: -1): définit la valeur de départ du noise.&#x20;
+* **-o** (par défaut: (0,0,0)): décale les coordonnées de génération de noise par un vecteur donné (X,Y,Z).&#x20;
+* **-c**:  Lorsqu'il est utilisé, centre la génération de noise sur les coordonnées mondiales de la sélection.&#x20;
+* **-t**:  Active le mode lisse, spécifiquement pour les blocs de neige, d'eau et de lave dans la palette \[Applicable uniquement en mode carte de hauteur].
 
 </details>
 
@@ -37,19 +37,19 @@ e.g `//ng heightmap`
 
 **`//eznoisegen terrain <palette> <noise> [height] [strength] [-z <scale>] [-s <seed>] [-l <smear>] [-o <offset>] [-chnt]`**
 
-* **Palette**: Specifies the palette of blocks to use.&#x20;
-* **Noise**: Defines the noise preset to use.&#x20;
-* **Height** (Default: 0): Controls the height from the bottom of your selection. A value of 0 will take the selection's height.
-  _Can place blocks above the selection if the height is great enough_&#x20;
-* **Strength** (Default: 1,0.5,0): Takes up to 3 comma-separated values which controls the strength of noise at various heights:
-  - *`0.5` would be 50% strength everywhere*
-  - *`0.7,0` would be 70% strength at the very bottom and 0% at the top, with everything in-between being a smooth transition*
-  - *`0,1,0` would be 0% strength at the bottom, 100% in the middle, and 0% at the top&#x20;*
-* **-z** (Default: 1): Adjusts the zoom level of the noise.&#x20;
-* **-s** (Default: -1): Sets the noise seed.&#x20;
-* **-l** (Default: 0): Applies a vertical smear to 3D noise.&#x20;
-* **-o** (Default: (0,0,0)): Offsets the noise generation coordinates by a given vector (X,Y,Z).&#x20;
-* **-c**: When used, centres the noise generation on the world coordinates of the selection.
+* **Palette**:  Spécifie la palette de blocs à utiliser.&#x20;
+* **Noise**: définit le préréglage de noise à utiliser.&#x20;
+* **Height** (par défaut: 0): contrôle la hauteur à partir du bas de votre sélection. Une valeur de 0 correspond à la hauteur de la sélection.
+  _Vous pouvez placer des blocs au-dessus de la sélection si la hauteur est suffisamment grande_&#x20;
+* **Strength** (par défaut: 1,0.5,0): prend jusqu'à 3 valeurs séparées par des virgules qui contrôlent l'intensité du noise à différentes hauteurs :
+  - *`0.5` il y aurait 50 % de force partout*
+  - *`0.7,0` il y aurait 70 % de force tout en bas et 0 % en haut, avec tout ce qui se trouve entre les deux étant une transition en douceur*
+  - *`0,1,0` il y aurait 0 % de force en bas, 100 % au milieu et 0 % en haut&#x20;*
+* **-z** (par défaut: 1): ajuste le niveau de zoom du noise.&#x20;
+* **-s** (par défaut: -1): définit la valeur de départ du noise.&#x20;
+* **-l** (par défaut: 0): applique un frottis vertical au noise 3D.&#x20;
+* **-o** (par défaut: (0,0,0)): décale les coordonnées de génération de noise par un vecteur donné (X,Y,Z).&#x20;
+* **-c**:  Lorsqu'il est utilisé, centre la génération de noise sur les coordonnées mondiales de la sélection.
 
 </details>
 
@@ -62,18 +62,18 @@ e.g `//ng heightmap`
 
 **`//eznoisegen <palette> <noise> [lowerThreshold] [upperThreshold] [-z <scale>] [-s <seed>] [-l <smear>] [-o <offset>] [-chnt]`**
 
-* **Palette**: Specifies the palette of blocks to use.&#x20;
-* **Noise**: Defines the noise preset to use.&#x20;
-* **Lower Threshold** (Default: 0): Sets the lower threshold for noise generation, with support for WorldEdit expressions (range: 0-1.0).&#x20;
-* **Upper Threshold** (Default: 0.5): Sets the upper threshold for noise generation, with support for WorldEdit expressions (range: 0-1.0).&#x20;
-* **-z** (Default: 1): Adjusts the zoom level of the noise.&#x20;
-* **-s** (Default: -1): Sets the noise seed.&#x20;
-* **-l** (Default: 0): Applies a vertical smear to 3D noise.&#x20;
-* **-o** (Default: (0,0,0)): Offsets the noise generation coordinates by a given vector (X,Y,Z).&#x20;
-* **-c**: When used, centres the noise generation on the world coordinates of the selection.&#x20;
-* **-h**: Activates heightmap mode using 2D noise. \
-  _Heightmap mode is only compatible with Cuboid, Cylinder, or Polygon region types._
-* **-n**: Uses normalized (-1 to 1) selection-centred coordinates for noise generation.
-* **-t**: Enables smooth mode, specifically for snow, water, and lava blocks in the palette \[Applicable only in heightmap mode].
+* **Palette**:  Spécifie la palette de blocs à utiliser.&#x20;
+* **Noise**: définit le préréglage de noise à utiliser.&#x20;
+* **Lower Threshold** (par défaut: 0):  définit le seuil inférieur pour la génération de noise, avec prise en charge des expressions WorldEdit (plage : 0-1,0).&#x20;
+* **Upper Threshold** (par défaut: 0.5): définit le seuil supérieur pour la génération de noise, avec prise en charge des expressions WorldEdit (plage : 0-1,0).&#x20;
+* **-z** (par défaut: 1):  ajuste le niveau de zoom du noise.&#x20;
+* **-s** (par défaut: -1): définit la valeur de départ du noise.&#x20;
+* **-l** (par défaut: 0): applique un frottis vertical au noise 3D.&#x20;
+* **-o** (par défaut: (0,0,0)): décale les coordonnées de génération de noise par un vecteur donné (X,Y,Z).&#x20;
+* **-c**: Lorsqu'il est utilisé, centre la génération de noise sur les coordonnées mondiales de la sélection.&#x20;
+* **-h**: active le mode Heightmap à l'aide du noise 2D. \
+  _Le mode Heightmap est uniquement compatible avec les types de régions Cuboid, Cylinder ou Polygon._
+* **-n**: utilise des coordonnées normalisées (-1 à 1) centrées sur la sélection pour la génération de noise.
+* **-t**: Active le mode lisse, spécifiquement pour les blocs de neige, d'eau et de lave dans la palette \[Applicable uniquement en mode carte de hauteur].
 
 </details>

@@ -1,9 +1,9 @@
 # Spline
 
-All sub-commands are under `//ezspline`  (`//ezsp`) \
-e.g `//ezspline beads`
+Toutes les sous-commandes sont sous `//ezspline`  (`//ezsp`) \
+par exemple `//ezspline beads`
 
-_Note that every spline can only be run with a Convex Selection type (\`//sel convex\`)._
+_Notez que chaque spline ne peut être exécutée qu'avec un type de sélection convexe (\`//sel convex\`)._
 
 ## `//ezspline ...`
 
@@ -16,17 +16,16 @@ _Note that every spline can only be run with a Convex Selection type (\`//sel co
 **`//ezsp beads <pattern> <radii> [-p <kb_parameters>] [-q <quality>]`** \
 **`[-n <normalMode>] [-g] [-h]`**
 
-Generates a beads-shaped spline along the selected convex region.
+Génère une spline en forme de perles le long de la région convexe sélectionnée.
 
-* **Pattern**: Specifies the block pattern.
-* **Radii**: The thickness of the spline, defined by up to three comma-separated values.\
-  _A radius of 10 will be 10 from the start to the end of the spline, 10,5,15 will start at 10, decreasing to 5 around the middle, and increasing to 15 at the end._
-* **-p** (Default: "0:0:0"): Sets the parameters for the flow of the spline, including tension, bias, and continuity, provided in a colon-separated format.
-* **-q** (Default: 1.85): Adjusts the quality of the spline generation. Increase this value to reduce air gaps, noting that higher values increase processing time.
-* **-n** (Default: "CONSISTENT"): Determines the mode for spline normal calculation.
-* **-g**: When used, calculates the center radii using the geometric center for three radii.
-* **-h**: Shows the help page.
-
+* **Pattern**: spécifie le modèle de bloc.
+* **Radii**:  l'épaisseur de la spline, définie par un maximum de trois valeurs séparées par des virgules.\
+  _ Un rayon de 10 sera de 10 du début à la fin de la spline, 10,5,15 commenceront à 10, diminueront à 5 vers le milieu et augmenteront à 15 à la fin._
+* **-p** (par défaut : "0:0:0"): définit les paramètres du flux de la spline, y compris la tension, la polarisation et la continuité, fournis dans un format séparé par deux points.
+* **-q** (par défaut : 1.85):  ajuste la qualité de la génération de splines. Augmentez cette valeur pour réduire les espaces vides, en notant que des valeurs plus élevées augmentent le temps de traitement.
+* **-n** (par défaut : "CONSISTENT"): détermine le mode de calcul normal de la spline.
+* **-g**: Lorsqu'il est utilisé, calcule les rayons centraux en utilisant le centre géométrique pour trois rayons.
+* **-h**: Affiche la page d'aide.
 </details>
 
 ### `chainlink`
@@ -37,20 +36,20 @@ Generates a beads-shaped spline along the selected convex region.
 
 **`//ezsp chainlink <pattern> <radii> [inner] [offset] [stretch] [spin] [-p <kb_parameters>] [-q <quality>] [-n <normalMode>] [-g] [-h]`**
 
-Generates a chainlink-shaped spline along the selected convex region.
+Génère une spline en forme de maillon de chaîne le long de la région convexe sélectionnée.
 
-* **Pattern**: Specifies the block pattern.
-* **Radii**: The thickness of the spline, defined by up to three comma-separated values.\
-  _A radius of 10 will be 10 from the start to the end of the spline, 10,5,15 will start at 10, decreasing to 5 around the middle, and increasing to 15 at the end._
-* **Inner** (Default: 1.0): The inner radius ratio of each link.
-* **Offset** (Default: 0.0): Amount to offset each link by, adjusting the alignment of the links in the chain.
-* **Stretch** (Default: 1.0): The amount to stretch the individual links along the chain.
-* **Spin** (Default: 0.0): Adds twist to the spline.
-* **-p** (Default: "0:0:0"): Sets the parameters for the flow of the spline, including tension, bias, and continuity, provided in a colon-separated format.
-* **-q** (Default: 1.85): Adjusts the quality of the spline generation. Increase this value to reduce air gaps, noting that higher values increase processing time.
-* **-n** (Default: "CONSISTENT"): Determines the mode for spline normal calculation.
-* **-g**: When used, calculates the center radii using the geometric center for three radii.
-* **-h**: Shows the help page.
+* **Pattern**: spécifie le modèle de bloc.
+* **Radii**: l'épaisseur de la spline, définie par un maximum de trois valeurs séparées par des virgules.\
+  _Un rayon de 10 sera de 10 du début à la fin de la spline, 10,5,15 commenceront à 10, diminueront à 5 vers le milieu et augmenteront à 15 à la fin._
+* **Inner** (par défaut : 1.0):  le rapport du rayon intérieur de chaque lien.
+* **Offset** (par défaut : 0.0):  montant de décalage de chaque lien, ajustant l'alignement des liens de la chaîne.
+* **Stretch** (par défaut : 1.0):  la quantité d'étirement des maillons individuels le long de la chaîne.
+* **Spin** (par défaut : 0.0): ajoute une torsion à la spline.
+* **-p** (par défaut : "0:0:0"):  définit les paramètres du flux de la spline, y compris la tension, la polarisation et la continuité, fournis dans un format séparé par deux points.
+* **-q** (par défaut : 1.85): ajuste la qualité de la génération de splines. Augmentez cette valeur pour réduire les espaces vides, en notant que des valeurs plus élevées augmentent le temps de traitement.
+* **-n** (par défaut : "CONSISTENT"): détermine le mode de calcul normal de la spline.
+* **-g**: Lorsqu'il est utilisé, calcule les rayons centraux en utilisant le centre géométrique pour trois rayons.
+* **-h**: Affiche la page d'aide.
 
 </details>
 
@@ -62,17 +61,17 @@ Generates a chainlink-shaped spline along the selected convex region.
 
 **`//ezsp cubes <pattern> <radii> [gap] [-p <kb_parameters>] [-q <quality>] [-n <normalMode>] [-g] [-h]`**
 
-Generates a spline out of cubes along the selected convex region.
+Génère une spline à partir de cubes le long de la région convexe sélectionnée.
 
-* **Pattern**: Specifies the block pattern.
-* **Radii**: The thickness of the spline, defined by up to three comma-separated values.\
-  _A radius of 10 will be 10 from the start to the end of the spline, 10,5,15 will start at 10, decreasing to 5 around the middle, and increasing to 15 at the end._
-* **Gap** (Default: 1.0): Sets the gap between cubes.
-* **-p** (Default: "0:0:0"): Sets the parameters for the flow of the spline, including tension, bias, and continuity, provided in a colon-separated format.
-* **-q** (Default: 1.85): Adjusts the quality of the spline generation. Increase this value to reduce air gaps, noting that higher values increase processing time.
-* **-n** (Default: "CONSISTENT"): Determines the mode for spline normal calculation.
-* **-g**: When used, calculates the center radii using the geometric center for three radii.
-* **-h**: Shows the help page.
+* **Pattern**: spécifie le modèle de bloc.
+* **Radii**:  l'épaisseur de la spline, définie par un maximum de trois valeurs séparées par des virgules.\
+  _ Un rayon de 10 sera de 10 du début à la fin de la spline, 10,5,15 commenceront à 10, diminueront à 5 vers le milieu et augmenteront à 15 à la fin._
+* **Gap** (par défaut : 1.0): définit l’écart entre les cubes.
+* **-p** (par défaut : "0:0:0"): définit les paramètres du flux de la spline, y compris la tension, la polarisation et la continuité, fournis dans un format séparé par deux points.
+* **-q** (par défaut : 1.85): ajuste la qualité de la génération de splines. Augmentez cette valeur pour réduire les espaces vides, en notant que des valeurs plus élevées augmentent le temps de traitement.
+* **-n** (par défaut : "CONSISTENT"): détermine le mode de calcul normal de la spline.
+* **-g**: Lorsqu'il est utilisé, calcule les rayons centraux en utilisant le centre géométrique pour trois rayons.
+* **-h**: Affiche la page d'aide.
 
 </details>
 
@@ -84,22 +83,22 @@ Generates a spline out of cubes along the selected convex region.
 
 **`//ezsp expression <pattern> <radii> [spin] <expression> [-p <kb_parameters>] [-q <quality>] [-n <normalMode>] [-g] [-h]`**
 
-Generates a spline shaped by the given WorldEdit expression along the selected convex region.
+Génère une spline façonnée par l'expression WorldEdit donnée le long de la région convexe sélectionnée.
 
-* **Pattern**: Specifies the block pattern.
-* **Radii**: The thickness of the spline, defined by up to three comma-separated values.\
-  _A radius of 10 will be 10 from the start to the end of the spline, 10,5,15 will start at 10, decreasing to 5 around the middle, and increasing to 15 at the end._
-* **Spin** (Default: 0): Adds twist to the spline.
-* **Expression**: The WorldEdit expression defining the shape of the spline. Supports "x", "y", "z" as variables.
-* **-p** (Default: "0:0:0"): Sets the parameters for the flow of the spline, including tension, bias, and continuity, provided in a colon-separated format.
-* **-q** (Default: 1.85): Adjusts the quality of the spline generation. Increase this value to reduce air gaps, noting that higher values increase processing time.
-* **-n** (Default: "CONSISTENT"): Determines the mode for spline normal calculation.
-* **-g**: When used, calculates the center radii using the geometric center for three radii.
-* **-h**: Shows the help page.
+* **Pattern**: spécifie le modèle de bloc.
+* **Radii**:  l'épaisseur de la spline, définie par un maximum de trois valeurs séparées par des virgules.\
+  _Un rayon de 10 sera de 10 du début à la fin de la spline, 10,5,15 commenceront à 10, diminueront à 5 vers le milieu et augmenteront à 15 à la fin._
+* **Spin** (par défaut : 0): ajoute une torsion à la spline.
+* **Expression**:  expression WorldEdit définissant la forme de la spline. Prend en charge « x », « y », « z » comme variables.
+* **-p** (par défaut : "0:0:0"): définit les paramètres du flux de la spline, y compris la tension, la polarisation et la continuité, fournis dans un format séparé par deux points.
+* **-q** (par défaut : 1.85): ajuste la qualité de la génération de splines. Augmentez cette valeur pour réduire les espaces vides, en notant que des valeurs plus élevées augmentent le temps de traitement.
+* **-n** (par défaut : "CONSISTENT"): détermine le mode de calcul normal de la spline.
+* **-g**:  Lorsqu'il est utilisé, calcule les rayons centraux en utilisant le centre géométrique pour trois rayons.
+* **-h**: Affiche la page d'aide.
 
-Example of an expression spline:\
+Exemple d'une spline d'expression :
 `//ezsp expression red 20,5 0 -q 4 z^2+y^2<2-x%2`\
-_Note that the expression must come last_
+_Notez que l'expression doit venir en dernier_
 
 </details>
 
@@ -111,19 +110,19 @@ _Note that the expression must come last_
 
 **`//ezsp fishnet <pattern> <radii> [spacing] [depth] [width] [-p <kb_parameters>] [-q <quality>] [-n <normalMode>] [-g] [-h]`**
 
-Generates a fishnet-shaped spline along the selected convex region.
+Génère une spline en forme de filet de pêche le long de la région convexe sélectionnée.
 
-* **Pattern**: Specifies the block pattern.
-* **Radii**: The thickness of the spline, defined by up to three comma-separated values.\
-  _A radius of 10 will be 10 from the start to the end of the spline, 10,5,15 will start at 10, decreasing to 5 around the middle, and increasing to 15 at the end._
-* **Spacing** (Default: 10): The mesh spacing of the net..
-* **Depth** (Default: 2): The depth of each string within the net.
-* **Width** (Default: 2): The width of each string.
-* **-p** (Default: "0:0:0"): Sets the parameters for the flow of the spline, including tension, bias, and continuity, provided in a colon-separated format.
-* **-q** (Default: 1.85): Adjusts the quality of the spline generation. Increase this value to reduce air gaps, noting that higher values increase processing time.
-* **-n** (Default: "CONSISTENT"): Determines the mode for spline normal calculation.
-* **-g**: When used, calculates the center radii using the geometric center for three radii.
-* **-h**: Shows the help page.
+* **Pattern**: spécifie le modèle de bloc.
+* **Radii**:  l'épaisseur de la spline, définie par un maximum de trois valeurs séparées par des virgules.\
+  _Un rayon de 10 sera de 10 du début à la fin de la spline, 10,5,15 commenceront à 10, diminueront à 5 vers le milieu et augmenteront à 15 à la fin._
+* **Spacing** (par défaut : 10): l'espacement des mailles du filet.
+* **Depth** (par défaut : 2): la profondeur de chaque corde dans le filet.
+* **Width** (par défaut : 2):  la largeur de chaque chaîne.
+* **-p** (par défaut : "0:0:0"): définit les paramètres du flux de la spline, y compris la tension, la polarisation et la continuité, fournis dans un format séparé par deux points.
+* **-q** (par défaut : 1.85): ajuste la qualité de la génération de splines. Augmentez cette valeur pour réduire les espaces vides, en notant que des valeurs plus élevées augmentent le temps de traitement.
+* **-n** (par défaut : "CONSISTENT"): détermine le mode de calcul normal de la spline.
+* **-g**:  Lorsqu'il est utilisé, calcule les rayons centraux en utilisant le centre géométrique pour trois rayons.
+* **-h**: Affiche la page d'aide.
 
 </details>
 
@@ -135,20 +134,20 @@ Generates a fishnet-shaped spline along the selected convex region.
 
 **`//ezsp noise <pattern> <radii> [strength] [stretch] [spin] <noise> [-p <kb_parameters>] [-q <quality>] [-n <normalMode>] [-g] [-h]`**
 
-Creates a noise-based spline along the selected convex region.
+Crée une spline basée sur le noise le long de la région convexe sélectionnée.
 
-* **Pattern**: Specifies the block pattern.
-* **Radii**: The thickness of the spline, defined by up to three comma-separated values.\
-  _A radius of 10 will be 10 from the start to the end of the spline, 10,5,15 will start at 10, decreasing to 5 around the middle, and increasing to 15 at the end._
-* **Strength** (Default: 0.5): Determines the noise strength, affecting the intensity of the noise.
-* **Stretch** (Default: 4.0): Controls the stretch factor of noise along the spline.
-* **Spin** (Default: 0): Adds twist to the spline.
-* **Noise** (Default: `Perlin(Freq:3)`): Specifies the type of noise to use for generation.
-* **-p** (Default: "0:0:0"): Sets the parameters for the flow of the spline, including tension, bias, and continuity, provided in a colon-separated format.
-* **-q** (Default: 1.85): Adjusts the quality of the spline generation. Increase this value to reduce air gaps, noting that higher values increase processing time.
-* **-n** (Default: "CONSISTENT"): Determines the mode for spline normal calculation.
-* **-g**: When used, calculates the center radii using the geometric center for three radii.
-* **-h**: Shows the help page.
+* **Pattern**: spécifie le modèle de bloc.
+* **Radii**:  l'épaisseur de la spline, définie par un maximum de trois valeurs séparées par des virgules.\
+  _Un rayon de 10 sera de 10 du début à la fin de la spline, 10,5,15 commenceront à 10, diminueront à 5 vers le milieu et augmenteront à 15 à la fin._
+* **Strength** (par défaut : 0.5): détermine la force du noise, affectant l'intensité du noise.
+* **Stretch** (par défaut : 4.0): contrôle le facteur d’étirement du noise le long de la spline.
+* **Spin** (par défaut : 0): ajoute une torsion à la spline.
+* **Noise** (par défaut : `Perlin(Freq:3)`): spécifie le type de noise à utiliser pour la génération.
+* **-p** (par défaut : "0:0:0"): définit les paramètres du flux de la spline, y compris la tension, la polarisation et la continuité, fournis dans un format séparé par deux points.
+* **-q** (par défaut : 1.85): ajuste la qualité de la génération de splines. Augmentez cette valeur pour réduire les espaces vides, en notant que des valeurs plus élevées augmentent le temps de traitement.
+* **-n** (par défaut : "CONSISTENT"): détermine le mode de calcul normal de la spline.
+* **-g**:  Lorsqu'il est utilisé, calcule les rayons centraux en utilisant le centre géométrique pour trois rayons.
+* **-h**: Affiche la page d'aide.
 
 </details>
 
@@ -160,18 +159,18 @@ Creates a noise-based spline along the selected convex region.
 
 **`//ezsp oscillate <pattern> <radii> [depth] [interval] [-p <kb_parameters>] [-q <quality>] [-n <normalMode>] [-g] [-h]`**
 
-Generates a spline with an oscillating thickness along the selected convex region.
+Génère une spline avec une épaisseur oscillante le long de la région convexe sélectionnée.
 
-* **Pattern**: Specifies the block pattern.
-* **Radii**: The thickness of the spline, defined by up to three comma-separated values.\
-  _A radius of 10 will be 10 from the start to the end of the spline, 10,5,15 will start at 10, decreasing to 5 around the middle, and increasing to 15 at the end._
-* **Depth** (Default: 2): Determines the ridge depth of the oscillation, affecting the amplitude of the waves.
-* **Interval** (Default: 5): Sets the ridge interval, controlling the frequency of the oscillation along the spline.
-* **-p** (Default: "0:0:0"): Sets the parameters for the flow of the spline, including tension, bias, and continuity, provided in a colon-separated format.
-* **-q** (Default: 1.85): Adjusts the quality of the spline generation. Increase this value to reduce air gaps, noting that higher values increase processing time.
-* **-n** (Default: "CONSISTENT"): Determines the mode for spline normal calculation.
-* **-g**: When used, calculates the center radii using the geometric center for three radii.
-* **-h**: Shows the help page.
+* **Pattern**: spécifie le modèle de bloc.
+* **Radii**:  l'épaisseur de la spline, définie par un maximum de trois valeurs séparées par des virgules.\
+  _Un rayon de 10 sera de 10 du début à la fin de la spline, 10,5,15 commenceront à 10, diminueront à 5 vers le milieu et augmenteront à 15 à la fin._
+* **Depth** (par défaut : 2): détermine la profondeur de crête de l'oscillation, affectant l'amplitude des ondes.
+* **Interval** (par défaut : 5): définit l'intervalle de crête, contrôlant la fréquence de l'oscillation le long de la spline.
+* **-p** (par défaut : "0:0:0"): définit les paramètres du flux de la spline, y compris la tension, la polarisation et la continuité, fournis dans un format séparé par deux points.
+* **-q** (par défaut : 1.85): ajuste la qualité de la génération de splines. Augmentez cette valeur pour réduire les espaces vides, en notant que des valeurs plus élevées augmentent le temps de traitement.
+* **-n** (par défaut : "CONSISTENT"): détermine le mode de calcul normal de la spline.
+* **-g**:  Lorsqu'il est utilisé, calcule les rayons centraux en utilisant le centre géométrique pour trois rayons.
+* **-h**: Affiche la page d'aide.
 
 </details>
 
@@ -183,18 +182,18 @@ Generates a spline with an oscillating thickness along the selected convex regio
 
 **`//ezsp polygon <pattern> <radii> [sides] [spin] [-p <kb_parameters>] [-q <quality>] [-n <normalMode>] [-g] [-h]`**
 
-Creates a regular polygon-shaped spline along the selected convex region.
+Crée une spline régulière en forme de polygone le long de la région convexe sélectionnée.
 
-* **Pattern**: Specifies the block pattern.
-* **Radii**: The thickness of the spline, defined by up to three comma-separated values.\
-  _A radius of 10 will be 10 from the start to the end of the spline, 10,5,15 will start at 10, decreasing to 5 around the middle, and increasing to 15 at the end._
-* **Sides** (Default: 6): Determines the number of sides to the polygon.
-* **Spin** (Default: 0.0): Adds twist to the spline.
-* **-p** (Default: "0:0:0"): Sets the parameters for the flow of the spline, including tension, bias, and continuity, provided in a colon-separated format.
-* **-q** (Default: 1.85): Adjusts the quality of the spline generation. Increase this value to reduce air gaps, noting that higher values increase processing time.
-* **-n** (Default: "CONSISTENT"): Determines the mode for spline normal calculation.
-* **-g**: When used, calculates the center radii using the geometric center for three radii.
-* **-h**: Shows the help page.
+* **Pattern**: spécifie le modèle de bloc.
+* **Radii**:  l'épaisseur de la spline, définie par un maximum de trois valeurs séparées par des virgules.\
+  _Un rayon de 10 sera de 10 du début à la fin de la spline, 10,5,15 commenceront à 10, diminueront à 5 vers le milieu et augmenteront à 15 à la fin._
+* **Sides** (par défaut : 6): détermine le nombre de côtés du polygone.
+* **Spin** (par défaut : 0.0): ajoute une torsion à la spline.
+* **-p** (par défaut : "0:0:0"): définit les paramètres du flux de la spline, y compris la tension, la polarisation et la continuité, fournis dans un format séparé par deux points.
+* **-q** (par défaut : 1.85): ajuste la qualité de la génération de splines. Augmentez cette valeur pour réduire les espaces vides, en notant que des valeurs plus élevées augmentent le temps de traitement.
+* **-n** (par défaut : "CONSISTENT"): détermine le mode de calcul normal de la spline.
+* **-g**:  Lorsqu'il est utilisé, calcule les rayons centraux en utilisant le centre géométrique pour trois rayons.
+* **-h**: Affiche la page d'aide.
 
 </details>
 
@@ -206,18 +205,18 @@ Creates a regular polygon-shaped spline along the selected convex region.
 
 **`//ezsp rope <pattern> <radii> [ropeCount] [spin] [-p <kb_parameters>] [-q <quality>] [-n <normalMode>] [-g] [-h]`**
 
-Creates a rope-shaped spline along the selected convex region.
+Crée une spline en forme de corde le long de la région convexe sélectionnée.
 
-* **Pattern**: Specifies the block pattern.
-* **Radii**: The thickness of the spline, defined by up to three comma-separated values.\
-  _A radius of 10 will be 10 from the start to the end of the spline, 10,5,15 will start at 10, decreasing to 5 around the middle, and increasing to 15 at the end._
-* **RopeCount** (Default: 3): Determines the number of intertwining ropes.
-* **Spin** (Default: 2.0): Adds twist to the spline.
-* **-p** (Default: "0:0:0"): Sets the parameters for the flow of the spline, including tension, bias, and continuity, provided in a colon-separated format.
-* **-q** (Default: 1.85): Adjusts the quality of the spline generation. Increase this value to reduce air gaps, noting that higher values increase processing time.
-* **-n** (Default: "CONSISTENT"): Determines the mode for spline normal calculation.
-* **-g**: When used, calculates the center radii using the geometric center for three radii.
-* **-h**: Shows the help page.
+* **Pattern**: spécifie le modèle de bloc.
+* **Radii**:  l'épaisseur de la spline, définie par un maximum de trois valeurs séparées par des virgules.\
+  _Un rayon de 10 sera de 10 du début à la fin de la spline, 10,5,15 commenceront à 10, diminueront à 5 vers le milieu et augmenteront à 15 à la fin._
+* **RopeCount** (par défaut : 3): détermine le nombre de cordes entrelacées.
+* **Spin** (par défaut : 2.0): ajoute une torsion à la spline.
+* **-p** (par défaut : "0:0:0"): définit les paramètres du flux de la spline, y compris la tension, la polarisation et la continuité, fournis dans un format séparé par deux points.
+* **-q** (par défaut : 1.85): ajuste la qualité de la génération de splines. Augmentez cette valeur pour réduire les espaces vides, en notant que des valeurs plus élevées augmentent le temps de traitement.
+* **-n** (par défaut : "CONSISTENT"): détermine le mode de calcul normal de la spline.
+* **-g**:  Lorsqu'il est utilisé, calcule les rayons centraux en utilisant le centre géométrique pour trois rayons.
+* **-h**: Affiche la page d'aide.
 
 </details>
 
@@ -230,15 +229,15 @@ Creates a rope-shaped spline along the selected convex region.
 **`//ezsp simple <pattern> <radii> [-p <kb_parameters>] [-q <quality>]`** \
 **`[-n <normalMode>] [-g] [-h]`**
 
-Creates a simple cylindrical spline along the selected convex region.
+Crée une spline cylindrique simple le long de la région convexe sélectionnée.
 
-* **Pattern**: Specifies the block pattern.
-* **Radii**: The thickness of the spline, defined by up to three comma-separated values.\
-  _A radius of 10 will be 10 from the start to the end of the spline, 10,5,15 will start at 10, decreasing to 5 around the middle, and increasing to 15 at the end._
-* **-p** (Default: "0:0:0"): Sets the parameters for the flow of the spline, including tension, bias, and continuity, provided in a colon-separated format.
-* **-q** (Default: 1.85): Adjusts the quality of the spline generation. Increase this value to reduce air gaps, noting that higher values increase processing time.
-* **-n** (Default: "CONSISTENT"): Determines the mode for spline normal calculation.
-* **-g**: When used, calculates the center radii using the geometric center for three radii.
-* **-h**: Shows the help page.
+* **Pattern**: spécifie le modèle de bloc.
+* **Radii**:  l'épaisseur de la spline, définie par un maximum de trois valeurs séparées par des virgules.\
+  _Un rayon de 10 sera de 10 du début à la fin de la spline, 10,5,15 commenceront à 10, diminueront à 5 vers le milieu et augmenteront à 15 à la fin._
+* **-p** (par défaut : "0:0:0"): définit les paramètres du flux de la spline, y compris la tension, la polarisation et la continuité, fournis dans un format séparé par deux points.
+* **-q** (par défaut : 1.85): ajuste la qualité de la génération de splines. Augmentez cette valeur pour réduire les espaces vides, en notant que des valeurs plus élevées augmentent le temps de traitement.
+* **-n** (par défaut : "CONSISTENT"): détermine le mode de calcul normal de la spline.
+* **-g**:  Lorsqu'il est utilisé, calcule les rayons centraux en utilisant le centre géométrique pour trois rayons.
+* **-h**: Affiche la page d'aide.
 
 </details>

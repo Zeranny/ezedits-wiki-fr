@@ -1,7 +1,7 @@
-# Shapes
+# Formes
 
-All sub-commands are under `//ezshapes`  (`//ezsh`) \
-e.g `//ezshapes polydome`
+Toutes les sous-commandes sont sous `//ezshapes`  (`//ezsh`) \
+par exemple `//ezshapes polydome`
 
 ## `//ezshapes ...`
 
@@ -13,13 +13,13 @@ e.g `//ezshapes polydome`
 
 **`//ezsh cone <pattern> <radii> <height> [rotation] [-dos]`**
 
-* **Pattern**: Specifies the block pattern.
-* **Radii**: Defines the radii of the cone. The first value is for the North/South direction, and the second is for East/West. These directions can change if the cone is rotated.
-* **Height**: Sets the height of the cone.
-* **Rotation** (Default: 0): Determines the angle of rotation about the y-axis, in degrees. This can be aligned with the player's aiming direction if the `-o` switch is used.
-* **-d**: When activated, generates the cone with the pointy side facing downwards.
-* **-o**: When used, the player's aim direction is considered for the cone's rotation.
-* **-s**: When used, the players selection will be moved to roughly cover the shape
+* **Pattern**: spécifie le modèle de bloc.
+* **Radii**: définit les rayons du cône. La première valeur correspond à la direction Nord/Sud et la seconde à la direction Est/Ouest. Ces directions peuvent changer si le cône est tourné.
+* **Height**: Définit la hauteur du cône.
+* **Rotation** (par défaut: 0): détermine l'angle de rotation autour de l'axe des Y, en degrés. Il peut être aligné avec la direction de visée du joueur si le `-o` commutateur est utilisé.
+* **-d**:  Lorsqu'il est activé, génère le cône avec le côté pointu tourné vers le bas.
+* **-o**: Lorsqu'il est utilisé, la direction de visée du joueur est prise en compte pour la rotation du cône.
+* **-s**: Lorsqu'il est utilisé, la sélection des joueurs sera déplacée pour couvrir approximativement la forme
 
 </details>
 
@@ -31,12 +31,12 @@ e.g `//ezshapes polydome`
 
 **`//ezsh polydome <pattern> <sides> <radius> <height> [-vs]`**
 
-* **Pattern**: Specifies the block pattern.&#x20;
-* **Sides**: Defines the number of sides for the polydome.&#x20;
-* **Radius**: Sets the radius of the polydome.&#x20;
-* **Height** (Default: 1): Determines the height of the dome.&#x20;
-* **-v**: Specifies a vertex pattern, altering the appearance at the vertices of the polydome.
-* **-s**: When used, the players selection will be moved to roughly cover the shape
+* **Pattern**: spécifie le modèle de bloc.&#x20;
+* **Sides**: Définit le nombre de côtés du polydôme.&#x20;
+* **Radius**:  définit le rayon du polydôme.&#x20;
+* **Height** (par défaut: 1): détermine la hauteur du dôme.&#x20;
+* **-v**: Spécifie un modèle de sommet, modifiant l'apparence des sommets du polydôme.
+* **-s**:  Lorsqu'il est utilisé, la sélection des joueurs sera déplacée pour couvrir approximativement la forme
 
 </details>
 
@@ -48,12 +48,12 @@ e.g `//ezshapes polydome`
 
 **`//ezsh polygon <pattern> <sides> <radius> <height> [direction] [-s]`** 
 
-* **Pattern**: Specifies the block pattern.&#x20;
-* **Sides**: Defines the number of sides for the polygon.&#x20;
-* **Radius**: Sets the radius of the polygon.&#x20;
-* **Height** (Default: 1): Determines the height of the polygon.&#x20;
-* **Direction** (Default: Player AIM): Specifies the direction of placement, which can include diagonals.
-* **-s**: When used, the players selection will be moved to roughly cover the shape
+* **Pattern**: spécifie le modèle de bloc.&#x20;
+* **Sides**: définit le nombre de côtés du polygone.&#x20;
+* **Radius**: définit le rayon du polygone.&#x20;
+* **Height** (par défaut: 1): détermine la hauteur du polygone.&#x20;
+* **Direction** (par défaut: VISÉE du joueur): spécifie la direction du placement, qui peut inclure des diagonales.
+* **-s**: Lorsqu'il est utilisé, la sélection des joueurs sera déplacée pour couvrir approximativement la forme
 
 </details>
 
@@ -65,12 +65,12 @@ e.g `//ezshapes polydome`
 
 **`//ezsh square <pattern> <radius> <height> [-fws]`**
 
-* **Pattern**: Specifies the block pattern.&#x20;
-* **Radius**: Sets the radius of the square.&#x20;
-* **Height** (Default: 1): Determines the height of the square.&#x20;
-* **-f**: When activated, only the faces of the square are generated.&#x20;
-* **-w**: When used, only the walls of the square are generated.
-* **-s**: When used, the players selection will be moved to roughly cover the shape
+* **Pattern**: spécifie le modèle de bloc.&#x20;
+* **Radius**: définit le rayon du carré.&#x20;
+* **Height** (par défaut: 1): détermine la hauteur du carré.&#x20;
+* **-f**: Lorsqu'il est activé, seules les faces du carré sont générées.&#x20;
+* **-w**: Lorsqu'il est utilisé, seuls les murs du carré sont générés.
+* **-s**: Lorsqu'il est utilisé, la sélection des joueurs sera déplacée pour couvrir approximativement la forme
 
 </details>
 
@@ -82,11 +82,11 @@ e.g `//ezshapes polydome`
 
 **`//ezsh tetrahedron <pattern> <radius> [rotation] [-os]`**
 
-* **Pattern**: Specifies the block pattern.&#x20;
-* **Radius**: Sets the size of the Tetrahedron.&#x20;
-* **Rotation** (Default: 0): Determines the angle of rotation about the y-axis, in degrees. This can be aligned with the player's aiming direction if the -o switch is used.&#x20;
-* **-o**: When used, the player's aim direction is considered for the Tetrahedron's rotation.
-* **-s**: When used, the players selection will be moved to roughly cover the shape
+* **Pattern**: spécifie le modèle de bloc.&#x20;
+* **Radius**: définit la taille du tétraèdre.&#x20;
+* **Rotation** (par défaut: 0): détermine l'angle de rotation autour de l'axe des Y, en degrés. Il peut être aligné avec la direction de visée du joueur si le commutateur -o est utilisé.&#x20;
+* **-o**: Lorsqu'il est utilisé, la direction de visée du joueur est prise en compte pour la rotation du tétraèdre.
+* **-s**: Lorsqu'il est utilisé, la sélection des joueurs sera déplacée pour couvrir approximativement la forme
 
 </details>
 
@@ -98,16 +98,16 @@ e.g `//ezshapes polydome`
 
 **`//ezsh torus <pattern> <major_radius> <minor_radius> <cross_section> [-os]`**
 
-* **Pattern**: Specifies the block pattern.
-* **Major Radius**: Sets the major radius of the torus.
-* **Minor Radius**: Sets the minor radius of the torus.
-* **Cross Section**: Determines the cross section shape of the torus:
+* **Pattern**: spécifie le modèle de bloc.
+* **Major Radius**: définit le rayon majeur du tore.
+* **Minor Radius**: définit le rayon mineur du tore.
+* **Cross Section**: Détermine la forme de la section transversale du tore :
   * `CIRCLE`
   * `DIAMOND`
   * `ROUNDED_SQUARE`
   * `SQUARE`
 
-* **-o**: When used, the rotation of the torus aligns with the player's aiming direction
-* **-s**: When used, the players selection will be moved to roughly cover the shape
+* **-o**: Lorsqu'il est utilisé, la rotation du tore s'aligne avec la direction de visée du joueur
+* **-s**: Lorsqu'il est utilisé, la sélection des joueurs sera déplacée pour couvrir approximativement la forme
 
 </details>

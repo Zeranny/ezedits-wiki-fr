@@ -1,4 +1,4 @@
-# Patterns
+# Motifs
 
 ### `#aim`
 
@@ -6,7 +6,7 @@
 
 <summary>#aim Pattern</summary>
 
-Takes the block the player is aiming at as the pattern.
+Prend le bloc que le joueur vise comme motif.
 
 <img src="../.gitbook/assets/aimPattern.gif" alt="" data-size="original">
 
@@ -21,8 +21,8 @@ Takes the block the player is aiming at as the pattern.
 **`#eznoisepattern[palette][noisePreset][<scale>][<seed>]`**\
 **Alias: `#eznp`**
 
-Uses a noise preset values to return palette blocks.\
-**Which also has the following in-built presets:**
+Utilise des valeurs prédéfinies de bruit pour renvoyer des blocs de palette.\
+**Qui possède également les préréglages intégrés suivants :**
 
 * **`#ridged[palette][<scale>][<seed>]`**
 * **`#smoothcells[palette][<scale>][<seed>]`**&#x20;
@@ -39,7 +39,7 @@ Uses a noise preset values to return palette blocks.\
 **`#vectorgradientpattern[palette][vector][distance][<noisePreset>][<noiseScale>][<noiseSeed>]`**\
 **Alias: `#vgradientp`**
 
-Sets palette blocks along a vector with a given distance length with the block chosen based on distance plus a blending factor. Can also use noise presets.
+Définit des blocs de palette le long d'un vecteur avec une longueur de distance donnée, le bloc étant choisi en fonction de la distance plus un facteur de fusion. Peut également utiliser des préréglages de bruit.
 
 </details>
 
@@ -51,12 +51,11 @@ Sets palette blocks along a vector with a given distance length with the block c
 
 **`#selection[selection][<offset>]`**
 
-Shorthand: **`#sel[selection][<offset>]`**
+Sténographie: **`#sel[selection][<offset>]`**
 
-Sets blocks using  the blocks currently in world at the location of the saved selection.\
-Acts as if the selection were tiled/stacked.
+SDéfinit des blocs en utilisant les blocs actuellement présents dans le monde à l'emplacement de la sélection enregistrée. Agit comme si la sélection était en mosaïque/empilée.
 
-Optional `<offset>` variable to offset the pattern by a given vector.
+Variable facultative `<offset>` pour décaler le motif par un vecteur donné.
 
 </details>
 
@@ -70,9 +69,8 @@ Optional `<offset>` variable to offset the pattern by a given vector.
 
 **`#palette[palette]`**
 
-Takes the given palette and returns a list of palette blocks.
-Can be used as a random block pattern.
+Prend la palette donnée et renvoie une liste de blocs de palette. Peut être utilisé comme modèle de bloc aléatoire.
 
-e.g. `//set #palette[##ice]` is the same as `//set [blue_ice,packed_ice,ice]`
+par exemple `//set #palette[##ice]` est le même que `//set [blue_ice,packed_ice,ice]`
 
 </details>

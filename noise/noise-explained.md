@@ -1,39 +1,39 @@
-# Noise Explained
+# Le bruit expliqué
 
-Noise can be a complex topic for anyone who has never read into it before, but in its simplest terms, noise is a way of getting a value out of some input (usually X,Y,Z coordinates).
+Le bruit peut être un sujet complexe pour quiconque ne l'a jamais étudié auparavant, mais dans ses termes les plus simples, le bruit est un moyen d'obtenir une valeur à partir d'une entrée (généralement des coordonnées X, Y, Z).
 
-The place you will likely be most familiar with noise is in Minecraft's terrain generation. At every point in the world, several noise functions are combined to determine if a block should be placed, and if so, which block.
+L'endroit où vous serez probablement le plus familier avec le bruit est dans la génération de terrain de Minecraft. À chaque point du monde, plusieurs fonctions de bruit sont combinées pour déterminer si un bloc doit être placé, et si oui, quel bloc.
 
-This is pretty much what we do in ezEdits, using noise to generate shapes, terrain, and textures.
+C'est à peu près ce que nous faisons dans ezEdits, en utilisant le bruit pour générer des formes, du terrain et des textures.
 
 
 
-Within the plugin you will find several noise types, with each having different characteristics, and Cellular specifically coming with many additional parameters you can customise.
+Dans le plugin, vous trouverez plusieurs types de bruit, chacun ayant des caractéristiques différentes, et Cellular est spécifiquement livré avec de nombreux paramètres supplémentaires que vous pouvez personnaliser.
 
-Some of the many features that use noise include:
+Certaines des nombreuses fonctionnalités qui utilisent le bruit incluent :
 
-* `//eznoisegen ...` - *Noisegen Commands*
-* `#eznoisemask` - *Masks*
+* `//eznoisegen ...` - *Commandes Noisegen*
+* `#eznoisemask` - *Masques*
 * `//ezbrush gradient ...` - *Brushes*
 
 
 
-_Noise in ezEdits based on a modified version of FastNoiseLite, so we strongly recommend this website to experiment with noise parameters:_ [_http://auburn.github.io/FastNoiseLite/_ ](http://auburn.github.io/FastNoiseLite/)
+_Le bruit dans ezEdits est basé sur une version modifiée de FastNoiseLite, nous recommandons donc fortement ce site Web pour expérimenter les paramètres de bruit :_ [_http://auburn.github.io/FastNoiseLite/_ ](http://auburn.github.io/FastNoiseLite/)
 
-## Noise Parameters
+## Paramètres de bruit
 
-Each parameter and many values also has a shorthand, such as "Fractal" instead of "FractalType" or "Simplex" instead of "OpenSimplex2". Wherever this is possible, the shorthand will be shown in brackets.\
+Chaque paramètre et de nombreuses valeurs disposent également d'un raccourci, tel que « Fractal » au lieu de « FractalType » ou « Simplex » au lieu de « OpenSimplex2 ». Dans la mesure du possible, le raccourci sera indiqué entre parenthèses.\
 <mark style="color:red;">`Red = Parameter`</mark>    <mark style="color:purple;">`Purple = Value`</mark>
 
 &#x20;
 
-### Noise Type
+### Type de bruit
 
 <details>
 
-<summary>Setting the Noise Type<br><mark style="color:red;"></summary>
+<summary>Réglage du type de bruit<br><mark style="color:red;"></summary>
 
-Sets the type of noise to be used. This is the start of any noise and will be in the format of `Noise()`, for example `Perlin()`, where all other parameters will go between the brackets.
+Définit le type de bruit à utiliser. Il s'agit du début de tout bruit et sera au format `Noise()`,  par exemple  `Perlin()`, où tous les autres paramètres seront placés entre parenthèses.
 
 * <mark style="color:purple;">`Perlin (per)`</mark>
 * <mark style="color:purple;">`OpenSimplex2 (simplex)`</mark>
@@ -46,44 +46,44 @@ Sets the type of noise to be used. This is the start of any noise and will be in
 
 </details>
 
-### Basic Noise Parameters
+### Paramètres de bruit de base
 
 <details>
 
-<summary>Basic Noise Parameters</summary>
+<summary>Paramètres de bruit de base</summary>
 
 * <mark style="color:red;">`Seed`</mark>\
-  Sets the seed value for the noise. -1 or no value will result in a random noise seed.
+  Définit la valeur de départ pour le bruit. -1 ou aucune valeur entraînera une valeur de départ de bruit aléatoire.
 * <mark style="color:red;">`Frequency (Freq)`</mark>\
-  Sets the frequency for the noise. A higher frequency will lead to steeper noise, a lower value will lead to smoother noise.
+  Définit la fréquence du bruit. Une fréquence plus élevée entraînera un bruit plus prononcé, une valeur plus basse entraînera un bruit plus doux.
 * <mark style="color:red;">`Inverted (Invert)`</mark>\
-  Whether to invert the noise value or not. Default is false.
+  Inverser ou non la valeur du bruit. La valeur par défaut est false.
   * <mark style="color:purple;">`True`</mark>
   * <mark style="color:purple;">`False`</mark>
 * <mark style="color:red;">`ValueMapping (Map)`</mark>\
-  Whether to ignore or override the value mapping. By default noise is sampled to map between 0 and 1.
+  Indique s'il faut ignorer ou remplacer le mappage de valeurs. Par défaut, le bruit est échantillonné pour correspondre à une valeur comprise entre 0 et 1.
   * <mark style="color:purple;">`Default (Def)`</mark>
   * <mark style="color:purple;">`None (No)`</mark>
   * <mark style="color:purple;">`Override (OR)`</mark>\
-    **If Overridden:**
+    **Si annulé :**
     * <mark style="color:red;">`LowerBound (Min)`</mark>
     * <mark style="color:red;">`UpperBound (Max)`</mark>
 * <mark style="color:red;">`YScaling (Y)`</mark>\
-  When using 3D noises this can be used to stretch or squish the Y axis.
+ Lors de l'utilisation de bruits 3D, cela peut être utilisé pour étirer ou écraser l'axe Y.
 
 </details>
 
-### Cellular Noise Parameters
+### Paramètres du bruit cellulaire
 
 <details>
 
-<summary><strong>Additional Cellular Noise Parameters</strong></summary>
+<summary><strong>Paramètres du bruit cellulaire</strong></summary>
 
 * <mark style="color:red;">`CellularJitterModifier (Jitter)`</mark>\
-  Usually `0..1.0`\
-  Controls the random jitter or distribution of cellular noise nodes, with 0 being a perfect grid, and 1 being maximally "random", without overlap. Values above 1 will start to overlap their neighbours.
+ Contrôle généralement `0..1.0`\
+  la gigue aléatoire ou la distribution des nœuds de bruit cellulaire, 0 étant une grille parfaite et 1 étant au maximum « aléatoire », sans chevauchement. Les valeurs supérieures à 1 commenceront à chevaucher leurs voisins.
 * <mark style="color:red;">`CellularDistanceFunction (Distance)`</mark>\
-  Controls the mathematical method used to determine the distance value for each point to its node.
+ Contrôle la méthode mathématique utilisée pour déterminer la valeur de distance de chaque point à son nœud.
   * <mark style="color:purple;">`Euclidean`</mark>
   * <mark style="color:purple;">`EuclideanSq (sq)`</mark>
   * <mark style="color:purple;">`Manhattan (man)`</mark>
@@ -93,8 +93,7 @@ Sets the type of noise to be used. This is the start of any noise and will be in
   * <mark style="color:purple;">`Minkowski99 (m99)`</mark>
   * <mark style="color:purple;">`Rounded (round)`</mark>
 * <mark style="color:red;">`CellularReturnType (DistReturn)`</mark>\
-  Controls how the distance value is modified prior to being returned.\
-  All Distance2\* values refer to the 2nd closest node instead of the closest.
+  Contrôle la manière dont la valeur de distance est modifiée avant d'être renvoyée. Toutes les valeurs Distance2* font référence au deuxième nœud le plus proche au lieu du plus proche.
   * <mark style="color:purple;">`CellValue (cell)`</mark>
   * <mark style="color:purple;">`Distance (1)`</mark>
   * <mark style="color:purple;">`DistanceSquared (sq)`</mark>
@@ -113,9 +112,9 @@ Sets the type of noise to be used. This is the start of any noise and will be in
   * <mark style="color:purple;">`Edge`</mark>
   * <mark style="color:purple;">`Rounded (round)`</mark>
   * <mark style="color:purple;">`NoiseLookup (noise)`</mark>\
-    **Additional Noise Lookup Parameters:**
+    **Paramètres de recherche de bruit supplémentaires :**
     * <mark style="color:red;">`CellularNoiseLookup (Lookup)`</mark>\
-      When using the NoiseLookup return type, this controls the underlying noise to overlay the cellular noise upon.
+      Lorsque vous utilisez le type de retour NoiseLookup, cela contrôle le bruit sous-jacent sur lequel superposer le bruit cellulaire.
       * <mark style="color:purple;">`Perlin (per)`</mark>
       * <mark style="color:purple;">`OpenSimplex2 (simplex)`</mark>
       * <mark style="color:purple;">`OpenSimplex2S (smooth)`</mark>
@@ -124,58 +123,59 @@ Sets the type of noise to be used. This is the start of any noise and will be in
       * <mark style="color:purple;">`White`</mark>
       * <mark style="color:purple;">`Cellular (vor)`</mark>
     * <mark style="color:red;">`CellularNoiseLookupFrequency (DistReturn)`</mark>\
-      Controls the frequency of the underlying noise.
+      Contrôle la fréquence du bruit sous-jacent.
 
 </details>
 
-### Shard Noise Parameters
+### Paramètres du bruit des éclats
 
 <details>
 
-<summary>Additional Shard Noise Parameters</summary>
+<summary>Paramètres du bruit des éclats</summary>
 
 * <mark style="color:red;">`Sharpness (Sharp)`</mark>\
-  Usually `0..1.0`\
-  Controls the pattern sharpness for Shard noise. Higher values have more defined edges within the pattern, whereas low values will appear more blurry.
+  Contrôle généralement `0..1.0`\
+  la netteté du motif pour le bruit des éclats. Les valeurs élevées ont des bords plus définis dans le motif, tandis que les valeurs faibles apparaîtront plus floues.
 
 </details>
 
-### Fractal Noise Parameters
+### Paramètres du bruit fractal
 
 <details>
 
-<summary>Fractal Noise Parameters</summary>
+<summary>Paramètres du bruit fractal</summary>
 
 * <mark style="color:red;">`FractalType (Fractal)`</mark>\
-  Sets the type of fractal noise to be used.
+ Définit le type de bruit fractal à utiliser.
   * <mark style="color:purple;">`None (No)`</mark>
   * <mark style="color:purple;">`FBm`</mark>
   * <mark style="color:purple;">`Ridged`</mark>
   * <mark style="color:purple;">`PingPong (PP)`</mark>\
-    **Additional PingPong Fractal Parameter:**
+    **Paramètre fractal PingPong supplémentaire :**
     * <mark style="color:red;">`PingPongStrength (PPStr)`</mark>
 
-**If Fractal Type other than `None` selected:**
+**Si le type fractal est autre que 
+celui sélectionné :**
 
 * <mark style="color:red;">`Octaves (Oct)`</mark>\
-  Sets the number of layers of fractal noise to be used.
+ Définit le nombre de couches de bruit fractal à utiliser.
 * <mark style="color:red;">`Lacunarity (Lac)`</mark>\
-  Sets the scale of each fractal layer. Values >1 will effectively increase the frequency for each layer, values <1 will effectively reduce the frequency for each layer.
+  Définit l'échelle de chaque couche fractale. Les valeurs > 1 augmenteront effectivement la fréquence de chaque couche, les valeurs < 1 réduiront effectivement la fréquence de chaque couche.
 * <mark style="color:red;">`Gain`</mark>\
-  Sets the relative strength of each fractal layer. Values <1 will decrease in strength for each layer, values >1 will increase.
+  Définit la force relative de chaque couche fractale. Les valeurs < 1 diminueront la force de chaque couche, les valeurs > 1 augmenteront.
 * <mark style="color:red;">`WeightedStrength (Weighted)`</mark>\
-  Sets the responsiveness of each layer's strength to the noise value.
+ Définit la réactivité de la force de chaque couche à la valeur du bruit.
 
 </details>
 
-### Domain Warp Parameters
+### Paramètres de déformation de domaine
 
 <details>
 
-<summary>Domain Warp Parameters</summary>
+<summary>Paramètres de déformation de domaine</summary>
 
 * <mark style="color:red;">`DomainWarpType (Warp)`</mark>\
-  Sets the type of domain warping to be used.
+  Définit le type de déformation de domaine à utiliser.
   * <mark style="color:purple;">`None (No)`</mark>
   * <mark style="color:purple;">`BasicGrid (Grid)`</mark>
   * <mark style="color:purple;">`OpenSimplex2 (Simplex)`</mark>
@@ -183,29 +183,29 @@ Sets the type of noise to be used. This is the start of any noise and will be in
   * <mark style="color:purple;">`Flow`</mark>
   * <mark style="color:purple;">`Turbulence (Turb)`</mark>
 
-**If Domain Warp Type other than `None` selected:**
+**Si le type de déformation de domaine est autre que celui sélectionné :**
 
 * <mark style="color:red;">`DomainWarpFreq (WarpFreq)`</mark>\
-  Sets the frequency for the domain warp.
+ Définit la fréquence de la déformation du domaine.
 * <mark style="color:red;">`DomainWarpOct (WarpOct)`</mark>\
-  Sets the number of layers for the domain warp.
+ Définit le nombre de couches pour la déformation de domaine.
 * <mark style="color:red;">`DomainWarpGain (WarpGain)`</mark>\
-  Sets the relative strength of each domain warp layer.
+  Définit la force relative de chaque couche de déformation de domaine.
 * <mark style="color:red;">`DomainWarpAmp (WarpAmp)`</mark>\
-  Sets the overall amplitude (strength) of the domain warp.
+  Définit l'amplitude globale (force) de la déformation du domaine.
 * <mark style="color:red;">`DomainWarpFrac (WarpFrac)`</mark>\
-  Sets the domain warp specific fractal type to be used.
+  Définit le type fractal spécifique de déformation de domaine à utiliser.
   * <mark style="color:purple;">`None (No)`</mark>
   * <mark style="color:purple;">`DomainWarpIndependent (ind)`</mark>
   * <mark style="color:purple;">`DomainWarpProgressive (prog)`</mark>
 * <mark style="color:red;">`DomainWarpLacunarity (WarpLac)`</mark>\
-  Sets the scale of each domain warp layer.
+  Définit l'échelle de chaque couche de déformation de domaine.
 
 </details>
 
 
 
-## Examples
+## Exemples
 
 **`Value(Seed:123,Freq:0.04)`**
 

@@ -1,6 +1,6 @@
 # Region
 
-A miscellaneous collection of commands which operate within your selected region.
+Une collection diverse de commandes qui fonctionnent dans la région sélectionnée.
 
 ### `//ezvines`
 
@@ -12,11 +12,11 @@ A miscellaneous collection of commands which operate within your selected region
 
 **`Alias: //vines`**
 
-* **Mask**: Specifies the mask matching blocks to hang "vines" from.&#x20;
-* **Pattern**: Determines the pattern of blocks to place.&#x20;
-* **Percentage** (Default: 10%): Sets the percentage of blocks to hang vines from.&#x20;
-* **Min Length** (Default: 2): Specifies the minimum vine length.&#x20;
-* **Max Length** (Default: 5): Defines the maximum vine length.
+* **Mask**: Spécifie le masque correspondant aux blocs sur lesquels accrocher les « vignes ».&#x20;
+* **Pattern**: Détermine le motif des blocs à placer.&#x20;
+* **Percentage** (par défaut: 10%): définit le pourcentage de blocs sur lesquels suspendre les vignes.&#x20;
+* **Min Length** (par défaut: 2): spécifie la longueur minimale de la vigne.&#x20;
+* **Max Length** (par défaut: 5): définit la longueur maximale de la vigne.
 
 <img src="../.gitbook/assets/ezvines_mask.gif" alt="" data-size="original"> **`<mask>`**
 
@@ -36,10 +36,10 @@ A miscellaneous collection of commands which operate within your selected region
 
 **`Alias: //moss`**
 
-* **Pattern**: Determines the block pattern to use for the moss.&#x20;
-* **Amount** (Default: 2.0): Specifies the amount of moss to place. Decimal values are allowed, and values are somewhat arbitrary.&#x20;
-* **Smooth Radii** (Default: 1): Sets the smoothing radii for the moss placement. Can be one radius or three comma-separated radii, in the order of East/West, Up/Down, North/South.&#x20;
-* **Smooth Iterations** (Default: 5): Defines the number of smoothing iterations to apply.
+* **Pattern**:  Détermine le motif de bloc à utiliser pour la mousse.&#x20;
+* **Amount** (par défaut: 2.0):indique la quantité de mousse à placer. Les valeurs décimales sont autorisées et les valeurs sont quelque peu arbitraires.&#x20;
+* **Smooth Radii** (par défaut: 1):  définit les rayons de lissage pour le placement de la mousse. Il peut s'agir d'un rayon ou de trois rayons séparés par des virgules, dans l'ordre Est/Ouest, Haut/Bas, Nord/Sud.&#x20;
+* **Smooth Iterations** (par défaut: 5): définit le nombre d'itérations de lissage à appliquer.
 
 <img src="../.gitbook/assets/ezmoss_amount.gif" alt="" data-size="original"> **`[amount]`**
 
@@ -61,9 +61,9 @@ A miscellaneous collection of commands which operate within your selected region
 
 **`Alias: //slabmerge`**
 
-* **Mask**: Specifies the mask to select which blocks to affect within the region.&#x20;
-* **-b**: When used, will also convert bottom slabs to full blocks.&#x20;
-* **-t**: When used, will also convert top slabs to full blocks.&#x20;
+* **Mask**: Spécifie le masque pour sélectionner les blocs à affecter dans la région.&#x20;
+* **-b**: Lorsqu'il est utilisé, convertira également les dalles inférieures en blocs complets.&#x20;
+* **-t**:  Lorsqu'il est utilisé, convertira également les dalles supérieures en blocs complets.&#x20;
 
 </details>
 
@@ -77,7 +77,7 @@ A miscellaneous collection of commands which operate within your selected region
 
 **`Alias: //statecycle`**
 
-* **Mask**: Specifies the mask to select which blocks to affect within the region.&#x20;
-* **State**: Identifies the block state value to cycle through for each block in the selection.
+* **Mask**: Spécifie le masque pour sélectionner les blocs à affecter dans la région.&#x20;
+* **State**:  identifie la valeur d’état du bloc à parcourir pour chaque bloc de la sélection.
 
 </details>

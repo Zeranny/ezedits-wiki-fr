@@ -1,30 +1,30 @@
 ---
-description: Advanced selection tool
+description: Outil de sélection avancé
 ---
 
 # Superwand
 
-The Super Wand tool offers four distinct modes for point selection and manipulation, providing an expanded way to work with region selections.
+L'outil Super Wand propose quatre modes distincts pour la sélection et la manipulation de points, offrant ainsi une manière étendue de travailler avec les sélections de régions.
 
 
 
-**WorldEditCUI is strongly recommended:** [**https://modrinth.com/mod/worldedit-cui**](https://modrinth.com/mod/worldedit-cui)
+**WorldEditCUI est fortement recommandé :** [**https://modrinth.com/mod/worldedit-cui**](https://modrinth.com/mod/worldedit-cui)
 
 ### Modes
 
-1. **TRACE Mode**: Selects the block you are targeting.
-2. **POSITION Mode**: Selects the block at your current player position.
-3. **RELATIVE Mode**: Selects a point relative to the last point placed and the player's aim direction.
-4. **GRAB Mode**: Enables grabbing and moving a point or the entire selection.
+1. **Mode TRACE**: Sélectionne le bloc que vous ciblez.
+2. **Mode POSITION**: Sélectionne le bloc à votre position de joueur actuelle.
+3. **Mode RELATIVE**: Sélectionne un point par rapport au dernier point placé et à la direction de visée du joueur.
+4. **Mode GRAB**: Permet de saisir et de déplacer un point ou la sélection entière.
 
-### Controls
+### Contrôles
 
 * **Right Click**:
-  * In point selection modes, selects a new point or replaces the most recent point if the selection is full.
-  * In GRAB mode, picks up a point or the entire selection, moving it with the player's movements.
+  * Dans les modes de sélection de points, sélectionne un nouveau point ou remplace le point le plus récent si la sélection est pleine.
+  *En mode GRAB, récupère un point ou la sélection entière, en le déplaçant avec les mouvements du joueur.
 * **Left Click**:
-  * In point selection modes, removes the last set point.
-  * In GRAB mode, drops the point or selection.
-* **Sneak + Left Click**: Cycles through the tool modes.
-* **Swap Hand (Default F Key)**: Reverses the order of points in the selection.
-* **Sneak + Swap Hand (Default F Key)**: Shifts all convex selection points along by one position in the list of points.
+  * Dans les modes de sélection de points, supprime le dernier point de consigne.
+  * En mode GRAB, supprime le point ou la sélection.
+* **Sneak + Left Click**: fait défiler les modes d'outils.
+* **Swap Hand (Default F Key)**: inverse l'ordre des points dans la sélection.
+* **Sneak + Swap Hand (Default F Key)**: décale tous les points de sélection convexes d'une position dans la liste des points.

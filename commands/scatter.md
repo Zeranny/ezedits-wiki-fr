@@ -1,12 +1,12 @@
 ---
-description: Surface Shape Scatterer
+description: Diffuseur de forme de surface
 ---
 
 # Scatter
 
-The `//ezscatter` (`//ezsc`) command scatters a shape across the surface of blocks within your selection.
+la commande `//ezscatter` (`//ezsc`)  disperse une forme sur la surface des blocs dans votre sélection.
 
-It comes with a number of pre-defined shapes as well as the ability to use WorldEdit expressions to define your own shape.
+Il est livré avec un certain nombre de formes prédéfinies ainsi que la possibilité d'utiliser des expressions WorldEdit pour définir votre propre forme.
 
 {% code overflow="wrap" %}
 ```
@@ -18,9 +18,9 @@ It comes with a number of pre-defined shapes as well as the ability to use World
 
 <summary><mark style="color:red;"><strong>&#x3C;shape></strong></mark></summary>
 
-**Current shapes**
+**Formes actuelles**
 
-_Additional parameters are given within the parenthesis after a shape._
+_Des paramètres supplémentaires sont indiqués entre parenthèses après une forme._
 
 * bean
 * cube
@@ -31,41 +31,41 @@ _Additional parameters are given within the parenthesis after a shape._
 * leaf
 * lemon
 * onion
-* polygon(*Sides*)
-* pyramid(*Sides*)
+* polygon(*cotés*)
+* pyramid(*cotés*)
 * spike
-* supersphere(*Exponent*)
+* supersphere(*exposant*)
 * tetrahedron
-* torus(*Thickness*)
+* torus(*épaisseur*)
 
-In addition to these, you can also define your own shape with a WorldEdit expression
+En plus de cela, vous pouvez également définir votre propre forme avec une expression WorldEdit
 
 **`Expression;<expression>`**
 or
 **`Expr;<expression>`**
 
-For example, this expression will create spirals:\
+Par exemple, cette expression créera des spirales :\
 `//ezsc expr;x+=sin(2*pi*y)/2;z+=cos(2*pi*y)/2;x*x+z*z<0.3^2`
 
 
 
 </details>
 
-* **Shape**: Specifies the type of shape to scatter.
-* **-s** (Default: "20"): Defines the size of the shapes to scatter. Can specify one size for uniform shapes or three for (X,Y,Z).
-* **-o** (Default: "0.8"): Controls the difference in size between sets of shapes. Set to 1 for constant sizing.
-* **-n** (Default: "2.0%"): Controls how densely the shapes are scattered across the region, as a percentage.
-* **-c** (Default: "0"): Specifies the angle of rotation for the shapes.
-* **-k** (Default: "up"): Determines the axis around which the shape rotates.\
-  If **CONSTANT**:
-  * **-i** (Default: "y"): Defines the primary axis for shape orientation.
-  * **-j** (Default: "x"): Defines the secondary axis for shape orientation.
-* **-d**: Limits placement to specific directions.
-  * **-e** (Default: "0.5"): Strengthens or weakens the directional filter effect.
-* **-m**: Restricts shape placement to surface blocks matching the specified mask.
-* **-p**: Chooses the block palette to use for the scattered shapes. If not set, uses existing blocks.
-* **-a**: Won't place air if enabled.
-* **-b**: Skips placing shapes that partially fall outside the region.
-* **-r**: Aligns shapes with the surface normal.
-* **-u**: Disables uniform seed point distribution, allowing for more random shape placements.
-* **-w**: Removes the original shape, leaving only the scattered shapes.
+* **Shape**:  Spécifie le type de forme à disperser.
+* **-s** (par défaut: "20"): définit la taille des formes à disperser. Vous pouvez spécifier une taille pour les formes uniformes ou trois pour (X, Y, Z).
+* **-o** (par défaut: "0.8"): contrôle la différence de taille entre les ensembles de formes. Définissez la valeur sur 1 pour un dimensionnement constant.
+* **-n** (par défaut: "2.0%"):  contrôle la densité de dispersion des formes dans la région, en pourcentage.
+* **-c** (par défaut: "0"):  spécifie l’angle de rotation des formes.
+* **-k** (par défaut: "up"): détermine l'axe autour duquel la forme pivote.\
+  Si **CONSTANT**:
+  * **-i** (par défaut: "y"): définit l’axe principal pour l’orientation de la forme.
+  * **-j** (par défaut: "x"): définit l’axe secondaire pour l’orientation de la forme.
+* **-d**:  Limite le placement à des directions spécifiques.
+  * **-e** (par défaut: "0.5"): renforce ou affaiblit l’effet du filtre directionnel.
+* **-m**:  limite le placement de la forme aux blocs de surface correspondant au masque spécifié.
+* **-p**:  choisit la palette de blocs à utiliser pour les formes dispersées. Si elle n'est pas définie, utilise les blocs existants.
+* **-a**:Ne placera pas d'air si cette option est activée.
+* **-b**: ignore le placement des formes qui tombent partiellement en dehors de la région.
+* **-r**: Aligne les formes avec la normale de la surface.
+* **-u**: désactive la distribution uniforme des points de départ, permettant des placements de formes plus aléatoires.
+* **-w**: Supprime la forme d'origine, ne laissant que les formes dispersées.
