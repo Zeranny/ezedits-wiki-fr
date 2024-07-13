@@ -22,7 +22,7 @@ Enregistre une palette définie par l'utilisateur avec un nom donné.
   * **`HOTBAR`**
     * Prend des blocs de la barre de raccourcis du joueur
     * Ignore les éléments et utilise les propriétés de bloc par défaut
-* **Longueur ** (par défaut: 0): nombre de blocs à récupérer. Une longueur de 0 (par défaut) récupérera des blocs jusqu'à ce que l'air soit atteint.
+* **Longueur** (par défaut: 0): nombre de blocs à récupérer. Une longueur de 0 (par défaut) récupérera des blocs jusqu'à ce que l'air soit atteint.
 * **-d** (par défaut: moi): la direction à laquelle effectuer la recherche. La valeur par défaut est la direction vers laquelle l'utilisateur fait face.
 * **-f**: Lorsqu'il est activé, écrase la palette existante portant le même nom.
 

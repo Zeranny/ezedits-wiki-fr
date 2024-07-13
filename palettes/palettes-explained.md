@@ -13,7 +13,7 @@ Certaines des nombreuses fonctionnalités qui utilisent des palettes incluent :
 
 
 
-Palettes can be constructed as a simple list of blocks, or via several modifiers:
+Les palettes peuvent être construites comme une simple liste de blocs, ou via plusieurs modificateurs :
 
 * &#x20;**`,`** - Concaténer : ajoute un bloc ou une palette à la fin du bloc ou de la palette précédente.\
   par exemple, `stone,dirt` il s'agit d'une palette de 2 blocs de pierre et de terre. `stone,##LegacyWool` est une palette composée de pierre et des blocs de la palette prédéfinie ##LegacyWool.
